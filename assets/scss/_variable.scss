@@ -1,0 +1,16 @@
+// Colors
+$bt-red: #ea3f40;
+$bt-orange: #f9a848;
+$bt-blue: #1f3263;
+$bt-light: #f2f2f2;
+
+$theme-colors: (
+  "bt-red": $bt-red,
+  "bt-orange": $bt-orange,
+  "bt-blue": $bt-blue,
+  "bt-light": $bt-light
+);
+
+// Font
+$font-family-base: "Poppins", sans-serif;
+$enable-responsive-font-sizes: true;

@@ -1,0 +1,9 @@
+header {
+  background-color: $bt-red;
+  position: fixed;
+  width: 100%;
+  z-index: $zindex-fixed;
+  box-shadow: $box-shadow-sm;
+  text-transform: uppercase;
+  font-weight: 600;
+}

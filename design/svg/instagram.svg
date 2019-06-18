@@ -1,0 +1,16 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77.635" height="77.635" viewBox="0 0 77.635 77.635">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e09b3d"/>
+      <stop offset="0.3" stop-color="#c74c4d"/>
+      <stop offset="0.6" stop-color="#c21975"/>
+      <stop offset="1" stop-color="#7024c4"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_105" data-name="Path 105" d="M77.636,38.817a38.818,38.818,0,0,1-37.548,38.8q-.633.021-1.269.021t-1.269-.021a38.828,38.828,0,1,1,40.087-38.8Zm0,0" transform="translate(-0.001 0.001)" fill="url(#linear-gradient)"/>
+  <g id="instagram_1_" data-name="instagram (1)" transform="translate(15.77 15.77)">
+    <path id="Path_106" data-name="Path 106" d="M32.364,0H13.732A13.748,13.748,0,0,0,0,13.732V32.364A13.748,13.748,0,0,0,13.732,46.1H32.364A13.748,13.748,0,0,0,46.1,32.364V13.732A13.748,13.748,0,0,0,32.364,0Zm9.095,32.364a9.1,9.1,0,0,1-9.095,9.095H13.732a9.1,9.1,0,0,1-9.095-9.095V13.732a9.1,9.1,0,0,1,9.095-9.095H32.364a9.1,9.1,0,0,1,9.095,9.095V32.364Z" fill="#fff"/>
+    <path id="Path_107" data-name="Path 107" d="M144.922,133a11.922,11.922,0,1,0,11.922,11.922A11.935,11.935,0,0,0,144.922,133Zm0,19.207a7.285,7.285,0,1,1,7.285-7.285A7.285,7.285,0,0,1,144.922,152.207Z" transform="translate(-121.874 -121.874)" fill="#fff"/>
+    <ellipse id="Ellipse_100" data-name="Ellipse 100" cx="2.857" cy="2.857" rx="2.857" ry="2.857" transform="translate(32.136 8.359)" fill="#fff"/>
+  </g>
+</svg>
