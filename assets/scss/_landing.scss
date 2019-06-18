@@ -2,7 +2,6 @@ section {
   padding: 4rem 0;
   .sec-title {
     text-align: center;
-    font-weight: 600;
     position: relative;
     padding-bottom: 15px;
     margin-bottom: 2.5rem;
@@ -30,6 +29,7 @@ section {
   .card {
     border-radius: 20px;
     border-width: 0;
+    max-width: 370px;
   }
 }
 #sec2 {
@@ -166,7 +166,6 @@ section {
       padding-top: 15px;
     }
     &-title {
-      font-weight: 600;
       @include rfs(18);
     }
     &-text {
@@ -186,5 +185,8 @@ section {
     border-width: 0;
     height: calc(100% - 10px);
     margin-bottom: 10px;
+  }
+  h5 {
+    @include rfs(18);
   }
 }

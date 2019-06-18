@@ -3,7 +3,15 @@ header {
   position: fixed;
   width: 100%;
   z-index: $zindex-fixed;
-  box-shadow: $box-shadow-sm;
+  box-shadow: $box-shadow;
   text-transform: uppercase;
   font-weight: 600;
+  .nav-language {
+    a {
+      color: white;
+      &.active {
+        color: $bt-orange;
+      }
+    }
+  }
 }
