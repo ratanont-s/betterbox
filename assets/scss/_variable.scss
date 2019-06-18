@@ -14,3 +14,12 @@ $theme-colors: (
 // Font
 $font-family-base: "Poppins", sans-serif;
 $enable-responsive-font-sizes: true;
+
+// Link
+$link-color: $bt-blue;
+
+// Slick
+$slick-font-path: "../js/slick/fonts/";
+$slick-loader-path: "../js/slick/";
+$slick-dot-color-active: $bt-red;
+$slick-dot-size: 10px;

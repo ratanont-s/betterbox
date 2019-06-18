@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BetterBox</title>
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8="
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -13,7 +20,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="BetterBox" />
+            <img src="./assets/images/logo.svg" alt="BetterBox" />
           </a>
           <button
             class="navbar-toggler"
@@ -67,15 +74,17 @@
                 <h5 class="text-bt-blue text-center">
                   Download our app
                 </h5>
-                <div class="row">
+                <div class="form-row">
                   <div class="col-6">
-                    <a href="#" class="btn btn-bt-orange btn-block"
-                      >App Store</a
+                    <a href="#" class="btn btn-bt-orange btn-block badge-pill"
+                      ><i class="fab fa-apple"></i> App Store</a
                     >
                   </div>
                   <div class="col-6">
-                    <a href="#" class="btn btn-outline-bt-red btn-block"
-                      >Play Store</a
+                    <a
+                      href="#"
+                      class="btn btn-outline-bt-red btn-block badge-pill"
+                      ><i class="fab fa-android"></i> Play Store</a
                     >
                   </div>
                 </div>
@@ -87,61 +96,530 @@
       <!-- How it works -->
       <section id="sec2">
         <div class="container">
+          <h1>How it works</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            amet pariatur obcaecati facilis reprehenderit dignissimos at cum
-            earum eius, sapiente maxime quidem, ad voluptatum explicabo
-            asperiores quod provident maiores totam. Temporibus quas magni amet
-            minus minima consectetur odit. Deserunt quos magnam minus sapiente
-            error molestiae. Voluptatem incidunt deserunt voluptatum excepturi
-            eveniet iste tempore harum, laudantium aperiam voluptate odio
-            dolorem sit! Officiis facilis numquam ratione aliquam dolor ullam,
-            expedita a tenetur porro dolorem nostrum suscipit laudantium!
-            Laborum hic quos esse accusamus officia. Officia repellendus dolores
-            maiores cupiditate excepturi obcaecati, ipsa deleniti. Animi
-            excepturi sed ratione ipsam, impedit quam commodi autem, dolorum,
-            consequatur earum in dolor doloribus minima a repellat molestiae
-            veniam corrupti sequi incidunt sit quibusdam deserunt? Illo nesciunt
-            magnam nemo? Atque minus ex optio error repudiandae, voluptas autem
-            minima rerum. Animi tempore doloribus dignissimos! Quae unde numquam
-            architecto molestiae aspernatur, dolor minima temporibus dignissimos
-            cupiditate repellat quas laborum tempora vitae.
+            BetterBox is the honor-based self-check-out kiosk that provides
+            better choices of snacks for office people.
+            <span class="d-xl-block"
+              >We provide easy purchase with hassle-free cashless payment
+              through BetterBox application</span
+            >
           </p>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./assets/images/sec2-1.jpg" class="card-img" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Choose your snacks and drinks
+                    <span class="d-xl-block">from our kiosk</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./assets/images/sec2-2.jpg" class="card-img" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Make a payment through
+                    <span class="d-xl-block">BetterBox Application</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="./assets/images/sec2-3.jpg" class="card-img" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Grab and enjoy BetterBox's premium
+                    <span class="d-xl-block">better-for-you snacks</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Benefits to your employee -->
       <section id="sec3">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="text-center mb-5">
+            <span class="text-bt-orange">Benefits</span>
+            <span class="text-bt-blue">to your</span>
+            <span class="text-bt-red">employee</span>
+          </h2>
+          <div class="list mb-5">
+            <h3 class="list-title text-bt-red">BetterBox Kiosk</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-kios-1.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b
+                      ><span class="d-xl-block">Carefully select tasty</span>
+                      and better-for-you</b
+                    >
+                    quality
+                    <span class="d-xl-block">snacks and drinks</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-kios-2.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b class="d-xl-block">Right at your office</b> save time and
+                    24/7 snacking
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-kios-3.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b class="d-xl-block">Increase your productivity</b> and
+                    happiness
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-kios-4.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b>Consistently rotate customized</b> snacks
+                    <span class="d-xl-block"
+                      >and drinks to your preference</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list">
+            <h3 class="list-title text-bt-orange">BetterBox App</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-app-1.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b>helps suggest</b> snacks and collects
+                    <b class="d-xl-block">behavioral data to track your diet</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-app-2.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b>See real-time availability</b> of snacks
+                    <span class="d-xl-block">and drinks</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-icon">
+                    <img src="./assets/images/icon-app-3.svg" />
+                  </div>
+                  <div class="card-body">
+                    <b>Offer in-app special benefit</b> just for you
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- We also provide -->
       <section id="sec4">
-        <div class="container"></div>
+        <div class="container text-center">
+          <h2 class="sec-title text-bt-blue">
+            We also <span class="text-bt-orange">provide ..</span>
+          </h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-xl-5">
+              <div class="card">
+                <img src="./assets/images/sec4-1.jpg" class="card-img" />
+                <div class="card-body">
+                  <h5 class="card-title">Event catering</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5">
+              <div class="card">
+                <img src="./assets/images/sec4-2.jpg" class="card-img" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <span class="d-lg-block">Box delivery for</span>
+                    small-medium size team
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Our clients review -->
       <section id="sec5">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="sec-title text-center text-bt-blue">
+            Our clients <span class="text-bt-red">review</span>
+          </h2>
+          <div class="slide">
+            <div class="slide-item">
+              <div class="card">
+                <div class="card-profile">
+                  <div class="card-photo">
+                    <img src="./assets/images/user-1.jpg" />
+                  </div>
+                  <div class="card-info">
+                    <h5 class="card-name">John Megan</h5>
+                    <small>Manager</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    The snacks are tasty and I love that I dont have to think
+                    about portion control. Perfect for my lunches at work.
+                  </p>
+                  <div class="card-logo">
+                    <img src="./assets/images/logo-nielsen.svg" alt="nielsen" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="card">
+                <div class="card-profile">
+                  <div class="card-photo">
+                    <img src="./assets/images/user-2.jpg" />
+                  </div>
+                  <div class="card-info">
+                    <h5 class="mb-0">Roger Bentham</h5>
+                    <small>Manager</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    I love betterbox! Their snacks are always the perfect amount
+                    and great tasting! I can take them anywhere.
+                  </p>
+                  <div class="card-logo">
+                    <img src="./assets/images/logo-scg.svg" alt="SCG" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="card">
+                <div class="card-profile">
+                  <div class="card-photo">
+                    <img src="./assets/images/user-3.jpg" />
+                  </div>
+                  <div class="card-info">
+                    <h5 class="mb-0">Alena Henry</h5>
+                    <small>Manager</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    My family loves all the different types of snacks we’ve
+                    tried so far. We look forward to receiving our boxes every
+                    week!
+                  </p>
+                  <div class="card-logo">
+                    <img
+                      src="./assets/images/logo-siriventures.svg"
+                      alt="siriventure"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="card">
+                <div class="card-profile">
+                  <div class="card-photo">
+                    <img src="./assets/images/user-2.jpg" />
+                  </div>
+                  <div class="card-info">
+                    <h5 class="mb-0">Roger Bentham</h5>
+                    <small>Manager</small>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    I love betterbox! Their snacks are always the perfect amount
+                    and great tasting! I can take them anywhere.
+                  </p>
+                  <div class="card-logo">
+                    <img src="./assets/images/logo-scg.svg" alt="SCG" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Our snacking folks -->
       <section id="sec6">
-        <div class="container"></div>
+        <div class="container text-center">
+          <h2 class="sec-title text-bt-orange">
+            Our snacking <span class="text-bt-blue">folks</span>
+          </h2>
+          <div class="row justify-content-center align-items-center">
+            <div class="col">
+              <img
+                src="./assets/images/logo-mfec.svg"
+                alt="MFEC"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/images/logo-neilsen.svg"
+                alt="nielsen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/images/logo-scg.svg"
+                alt="SCG"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/images/logo-siriventures.svg"
+                alt="SIRIVENTURES"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/images/logo-zero-to-one.svg"
+                alt="ZERO TO ONE"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Our snack partners -->
       <section id="sec7">
-        <div class="container"></div>
+        <div class="container text-center">
+          <div class="sec-title">
+            <h2 class="text-bt-orange">
+              Our snacking <span class="text-bt-blue">partners</span>
+            </h2>
+            <p class="font-weight-normal">
+              BetterBox has more than 30 snack partners, providing more than 80
+              kinds of snacks
+            </p>
+          </div>
+          <p>
+            <img
+              src="./assets/images/partners.svg"
+              alt="Partners"
+              class="w-100"
+            />
+          </p>
+        </div>
       </section>
       <!-- Our team -->
       <section id="sec8">
-        <div class="container"></div>
+        <div class="container text-center">
+          <h2 class="sec-title text-bt-blue">
+            Our <span class="text-bt-red">team</span>
+          </h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/user-1.jpg"
+                    alt="Panu Pornsinanan"
+                  />
+                </div>
+                <div>
+                  <img src="./assets/images/line-red-vertical.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Panu Pornsinanan</h5>
+                  <p class="card-text">Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/user-2.jpg"
+                    alt="Brook Chaiwichian"
+                  />
+                </div>
+                <div>
+                  <img src="./assets/images/line-red-vertical.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Brook Chaiwichian</h5>
+                  <p class="card-text">Co-Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/user-3.jpg"
+                    alt="Yoki Patchimasiri"
+                  />
+                </div>
+                <div>
+                  <img src="./assets/images/line-red-vertical.svg" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Yoki Patchimasiri</h5>
+                  <p class="card-text">Co-Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Contact us -->
       <section id="sec9">
-        <div class="container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            officia odit fugit cumque tempore veniam? Suscipit at, expedita
-            aperiam corporis neque praesentium, dolor itaque recusandae delectus
-            a labore laudantium necessitatibus!
-          </p>
+        <div class="container text-bt-blue">
+          <h1 class="sec-title">Contact us</h1>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <p>For company interested in BetterBox at your office</p>
+              <div class="d-flex align-items-center">
+                <span class="mr-3">
+                  <img src="./assets/images/icon-email.svg" class="img-fluid" />
+                </span>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="mailto:brook@betterboxbkk.com"
+                      >brook@betterboxbkk.com</a
+                    >
+                  </li>
+                  <li>Tel. (+66) 85 166 4399</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>For snack partners who want to join our passion</p>
+              <div class="d-flex align-items-center">
+                <span class="mr-3">
+                  <img src="./assets/images/icon-email.svg" class="img-fluid" />
+                </span>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="mailto:yoki@betterboxbkk.com"
+                      >yoki@betterboxbkk.com</a
+                    >
+                  </li>
+                  <li>Tel. (+66) 81 868 0824</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="nav justify-content-center mb-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <img
+                  src="./assets/images/facebook.svg"
+                  alt="facebook"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <img
+                  src="./assets/images/instagram.svg"
+                  alt="instagram"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <img
+                  src="./assets/images/line.svg"
+                  alt="line"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <img
+                  src="./assets/images/linkedin.svg"
+                  alt="linkedin"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+          <h5>
+            <span class="text-bt-red d-block">Follow us on Instragram </span>
+            @betterboxbkk
+          </h5>
+          <div class="form-row">
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./assets/images/ig-1.jpg"
+                  alt="..."
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./assets/images/ig-2.jpg"
+                  alt="..."
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./assets/images/ig-3.jpg"
+                  alt="..."
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./assets/images/ig-4.jpg"
+                  alt="..."
+                  class="card-img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -150,5 +628,32 @@
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.parallax.min.js"></script>
+    <script src="./assets/js/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#sec5 .slide").slick({
+          infinite: true,
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
   </body>
 </html>
