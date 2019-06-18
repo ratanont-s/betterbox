@@ -11565,6 +11565,12 @@ header .nav-language a.active {
   color: #f9a848;
 }
 
+@media (max-width: 991.98px) {
+  header .nav-link {
+    text-align: center;
+  }
+}
+
 .btn-bt-orange {
   color: #fff;
 }

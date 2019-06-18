@@ -22,4 +22,9 @@ header {
       }
     }
   }
+  .nav-link {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
 }
