@@ -4,3 +4,29 @@
     color: color-yiq(theme-color("dark"));
   }
 }
+
+.card-hover {
+  .card-img {
+    @include transition($transition-base);
+  }
+  @include hover {
+    .card-img {
+      transform: scale(1.025);
+      box-shadow: $box-shadow;
+      @include transition($transition-base);
+    }
+  }
+}
+
+.card-hover-img {
+  .card-img img {
+    @include transition($transition-base);
+  }
+  @include hover {
+    .card-img img {
+      transform: scale(1.025);
+      box-shadow: $box-shadow;
+      @include transition($transition-base);
+    }
+  }
+}

@@ -11579,6 +11579,62 @@ header .nav-language a.active {
   color: #fff;
 }
 
+.card-hover .card-img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover .card-img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.card-hover:hover .card-img {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover:hover .card-img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.card-hover-img .card-img img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover-img .card-img img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.card-hover-img:hover .card-img img {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover-img:hover .card-img img {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 section {
   padding: 4rem 0;
 }
@@ -11650,6 +11706,11 @@ section .sec-title::before {
   border-radius: 10px;
 }
 
+#sec2 .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #sec3 .list-title {
   position: relative;
   padding-bottom: 10px;
@@ -11702,6 +11763,11 @@ section .sec-title::before {
 
 #sec4 .card-img {
   border-radius: 5px;
+}
+
+#sec4 .card-body {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #sec5 .slide-item {
