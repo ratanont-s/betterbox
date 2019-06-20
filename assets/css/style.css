@@ -11899,6 +11899,14 @@ section .sec-title::before {
   max-height: 30px;
 }
 
+#sec7 .list-logo img {
+  width: 100px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 1rem;
+}
+
 #sec8 .card {
   border-width: 0;
 }
