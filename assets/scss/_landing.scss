@@ -31,8 +31,17 @@ section {
     border-width: 0;
     max-width: 370px;
     @include rfs(18);
+    padding-top: 27px;
+    padding-bottom: 30px;
     h1 {
       letter-spacing: 2px;
+    }
+    h5 {
+      @include rfs(25);
+    }
+    .btn {
+      border-width: 2px;
+      padding: 0.4rem 0.8rem;
     }
   }
 }

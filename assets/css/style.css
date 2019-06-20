@@ -11682,10 +11682,27 @@ section .sec-title::before {
   border-width: 0;
   max-width: 370px;
   font-size: 1.125rem;
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 #sec1 .card h1 {
   letter-spacing: 2px;
+}
+
+#sec1 .card h5 {
+  font-size: 1.5625rem;
+}
+
+@media (max-width: 1200px) {
+  #sec1 .card h5 {
+    font-size: calc(1.28125rem + 0.375vw) ;
+  }
+}
+
+#sec1 .card .btn {
+  border-width: 2px;
+  padding: 0.4rem 0.8rem;
 }
 
 #sec2 {
