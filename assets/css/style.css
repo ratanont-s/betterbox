@@ -11641,12 +11641,27 @@ header .nav-language a.active {
 
 .card-counter {
   background: url("../images/bg-counter.png") no-repeat right 1.25rem bottom 1.25rem;
-  background-size: 100px auto;
+  background-size: 170px auto;
+  border-width: 0;
+}
+
+@media (max-width: 767.98px) {
+  .card-counter {
+    background-size: 60px auto;
+  }
 }
 
 .card-counter .card-title {
   position: relative;
   padding-bottom: 1rem;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .card-counter .card-title {
+    font-size: calc(1.3125rem + 0.75vw) ;
+  }
 }
 
 .card-counter .card-title::before {
@@ -11660,6 +11675,21 @@ header .nav-language a.active {
   height: 3px;
   border-radius: 10rem;
   background-color: white;
+}
+
+.card-counter .card-text {
+  font-weight: 400;
+}
+
+.card-counter h1 {
+  font-size: 9.375rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .card-counter h1 {
+    font-size: calc(2.0625rem + 9.75vw) ;
+  }
 }
 
 section {

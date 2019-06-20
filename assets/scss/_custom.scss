@@ -1,5 +1,6 @@
 .btn-bt-orange {
   color: color-yiq(theme-color("dark"));
+
   @include hover-focus {
     color: color-yiq(theme-color("dark"));
   }
@@ -9,6 +10,7 @@
   .card-img {
     @include transition($transition-base);
   }
+
   @include hover {
     .card-img {
       transform: scale(1.025);
@@ -22,6 +24,7 @@
   .card-img img {
     @include transition($transition-base);
   }
+
   @include hover {
     .card-img img {
       transform: scale(1.025);
@@ -36,12 +39,20 @@
 }
 
 .card-counter {
-  background: url("../images/bg-counter.png") no-repeat right 1.25rem bottom
-    1.25rem;
-  background-size: 100px auto;
+  background: url("../images/bg-counter.png") no-repeat right 1.25rem bottom 1.25rem;
+  background-size: 170px auto;
+  border-width: 0;
+
+  @include media-breakpoint-down(sm) {
+    background-size: 60px auto;
+  }
+
   .card-title {
     position: relative;
     padding-bottom: 1rem;
+    @include rfs(30);
+    font-weight: 400;
+
     &::before {
       content: "";
       position: absolute;
@@ -54,5 +65,14 @@
       border-radius: 10rem;
       background-color: white;
     }
+  }
+
+  .card-text {
+    font-weight: 400;
+  }
+
+  h1 {
+    @include rfs(150);
+    font-weight: 300;
   }
 }
