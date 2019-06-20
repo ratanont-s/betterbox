@@ -505,6 +505,17 @@
               </div>
             </div>
           </div>
+
+          <!-- People counter -->
+          <div
+            class="card card-body card-counter bg-bt-orange text-white col-lg-8 mx-auto mt-4"
+          >
+            <p class="card-title">
+              People accessing to our better-for-you snacks
+            </p>
+            <h1 class="display-1 counter">15,000</h1>
+            <small>and counting...</small>
+          </div>
         </div>
       </section>
       <!-- Contact us -->
@@ -631,9 +642,11 @@
 
     <!-- JS -->
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.parallax.min.js"></script>
     <script src="./assets/js/slick/slick.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
     <script>
       $(document).ready(function() {
         $("body").scrollspy({ target: "#navbar" });
@@ -683,6 +696,8 @@
             }
           ]
         });
+
+        $(".counter").counterUp({ triggerOnce: true });
       });
     </script>
   </body>
