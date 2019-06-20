@@ -30,6 +30,10 @@ section {
     border-radius: 20px;
     border-width: 0;
     max-width: 370px;
+    @include rfs(18);
+    h1 {
+      letter-spacing: 2px;
+    }
   }
 }
 #sec2 {

@@ -11635,6 +11635,10 @@ header .nav-language a.active {
   }
 }
 
+.font-weight-semibold {
+  font-weight: 600;
+}
+
 section {
   padding: 4rem 0;
 }
@@ -11677,6 +11681,11 @@ section .sec-title::before {
   border-radius: 20px;
   border-width: 0;
   max-width: 370px;
+  font-size: 1.125rem;
+}
+
+#sec1 .card h1 {
+  letter-spacing: 2px;
 }
 
 #sec2 {

@@ -15,9 +15,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="container">
           <button
             class="navbar-toggler order-lg-1"
@@ -44,20 +44,20 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec1">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">How it works</a>
+                <a class="nav-link" href="#sec2">How it works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Other services</a>
+                <a class="nav-link" href="#sec4">Other services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#follow-us">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
+                <a class="nav-link" href="#sec9">Contact us</a>
               </li>
             </ul>
           </div>
@@ -69,10 +69,13 @@
       <section id="sec1" data-src="./assets/images/bg-sec1.png" data-parallax>
         <div class="container">
           <div class="card card-body text-bt-red">
-            <h1 class="card-title text-uppercase">Better Box</h1>
+            <h1 class="card-title text-uppercase">BetterBox</h1>
             <p class="card-text">
-              Revolutionize snacking habit of people with tastier, healthier,
-              and more convenient way to snack…
+              Revolutionize snacking habit of people with
+              <span class="font-weight-semibold"
+                >tastier, healthier, and more convenient</span
+              >
+              way to snack…
             </p>
             <p class="text-center">
               <img src="./assets/images/color_pattern.png" class="img-fluid" />
@@ -580,7 +583,7 @@
               </a>
             </li>
           </ul>
-          <h5>
+          <h5 id="follow-us">
             <span class="text-bt-red d-block">Follow us on Instragram </span>
             @betterboxbkk
           </h5>
@@ -631,6 +634,32 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.parallax.min.js"></script>
     <script src="./assets/js/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+      
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
     <script>
       $(document).ready(function() {
         $("#sec5 .slide").slick({
