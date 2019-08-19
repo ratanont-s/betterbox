@@ -1,0 +1,24 @@
+.sidebar {
+    &-recent-product {
+        ul {
+            li {
+
+                a {
+                    .list {
+                        &-img {
+                            img {
+                                width: 65px;
+                                height: 65px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        &-text {
+                            color: $body-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

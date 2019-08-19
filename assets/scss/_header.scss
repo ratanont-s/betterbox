@@ -6,25 +6,56 @@ header {
   box-shadow: $box-shadow;
   text-transform: uppercase;
   font-weight: 600;
+
   .navbar-brand {
     @include media-breakpoint-down(md) {
       margin-right: 0;
+
       img {
         max-height: 40px;
       }
     }
   }
+
   .nav-language {
     a {
       color: white;
+
       &.active {
         color: $bt-orange;
       }
     }
   }
+
   .nav-link {
     @include media-breakpoint-down(md) {
       text-align: center;
+    }
+  }
+
+  .form-search {
+    margin-left: auto;
+
+    .input-group {
+      &-append {
+        margin-left: 0;
+
+        .btn {
+          border-width: 0;
+          background-color: rgba(black, .15);
+          color: white;
+        }
+      }
+
+      .form-control {
+        border-width: 0;
+        background-color: rgba(black, .15);
+        color: white;
+
+        &::placeholder {
+          color: white;
+        }
+      }
     }
   }
 }

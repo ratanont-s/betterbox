@@ -3,16 +3,19 @@ $bt-red: #ea3f40;
 $bt-orange: #f9a848;
 $bt-blue: #1f3263;
 $bt-light: #f2f2f2;
+$bt-yellow: #FFF0A9;
+$bt-bluesky:#3AA3FF;
 
-$theme-colors: (
-  "bt-red": $bt-red,
+$theme-colors: ("bt-red": $bt-red,
   "bt-orange": $bt-orange,
   "bt-blue": $bt-blue,
-  "bt-light": $bt-light
-);
+  "bt-light": $bt-light,
+  "bt-yellow": $bt-yellow,
+  "bt-bluesky": $bt-bluesky);
 
 // Font
-$font-family-base: "Poppins", sans-serif;
+$font-family-base: "Poppins",
+sans-serif;
 $enable-responsive-font-sizes: true;
 $headings-font-weight: 600;
 
