@@ -6,6 +6,10 @@ $bt-light: #f2f2f2;
 $bt-yellow: #FFF0A9;
 $bt-bluesky:#3AA3FF;
 
+$primary: $bt-red;
+$secondary: $bt-orange;
+$warning: $bt-yellow;
+
 $theme-colors: ("bt-red": $bt-red,
   "bt-orange": $bt-orange,
   "bt-blue": $bt-blue,
@@ -21,6 +25,7 @@ $headings-font-weight: 600;
 
 // Link
 $link-color: $bt-blue;
+$link-hover-decoration: none;
 
 // Slick
 $slick-font-path: "../js/slick/fonts/";

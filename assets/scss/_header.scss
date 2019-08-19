@@ -27,7 +27,52 @@ header {
     }
   }
 
+  .nav-item {
+    &.dropdown {
+      .dropdown {
+        &-toggle {
+          &::after {
+            display: none;
+          }
+        }
+
+        &-menu {
+          border-width: 0;
+          box-shadow: $box-shadow;
+
+          .btn {
+            text-transform: uppercase;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      &-cart {
+        text-transform: capitalize;
+
+        .dropdown {
+          &-item {
+            display: flex;
+            white-space: normal;
+            padding: 1rem 0;
+          }
+
+          &-img img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+          }
+
+          &-detail {
+            padding: 0 .25rem;
+          }
+        }
+      }
+    }
+  }
+
   .nav-link {
+
     @include media-breakpoint-down(md) {
       text-align: center;
     }
