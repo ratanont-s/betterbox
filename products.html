@@ -107,21 +107,21 @@
         <!-- Page Header -->
         <div class="page-header" data-parallax="scroll" data-src="./assets/images/bg-page-header.jpg"></div>
         <!-- Promotion header -->
-        <div class="bg-bt-yellow py-2">
+        <div class="promo-header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg">
-                        <div class="text-bt-blue d-flex align-items-center">
-                            <span class="mr-2">
-                                <img src="./assets/images/icons/free-shipping.svg" alt="" class="img-fluid">
+                        <div class="promo-header-item">
+                            <span class="promo-header-icon">
+                                <img src="./assets/images/icons/free-shipping.svg" alt="">
                             </span>
                             Free standard shipping on any order of 500 THB or more
                         </div>
                     </div>
                     <div class="col-lg">
-                        <div class="text-bt-blue d-flex align-items-center">
-                            <span class="mr-2">
-                                <img src="./assets/images/icons/point.svg" alt="" class="img-fluid">
+                        <div class="promo-header-item">
+                            <span class="promo-header-icon">
+                                <img src="./assets/images/icons/point.svg" alt="">
                             </span>
                             Earn 1 BetterBox Point for every 100 THB purchase
                         </div>
@@ -161,6 +161,89 @@
                         <img src="./assets/images/icons/product-group-all.svg" alt="" class="img-fluid mx-auto">
                         show all
                     </a>
+                </div>
+                <!-- Filter -->
+                <div class="product-filter">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#filterModal">
+                        Launch demo modal
+                    </button>
+                    <div class="modal fade" tabindex="-1" role="dialog" id="filterModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Catagory -->
+                                    <div class="sidebar-catagory mb-lg-5">
+                                        <h4 class="text-uppercase">Category</h4>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck1">
+                                                <label class="custom-control-label" for="catagoryCheck1">0 KCAL</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck2">
+                                                <label class="custom-control-label" for="catagoryCheck2">0 SUGAR</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck3">
+                                                <label class="custom-control-label" for="catagoryCheck3">0 FAT</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck4">
+                                                <label class="custom-control-label" for="catagoryCheck4">Low
+                                                    kcal</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck5">
+                                                <label class="custom-control-label" for="catagoryCheck5">Low
+                                                    sugar</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck6">
+                                                <label class="custom-control-label" for="catagoryCheck6">Low
+                                                    carb</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck7">
+                                                <label class="custom-control-label" for="catagoryCheck7">high
+                                                    protein</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck8">
+                                                <label class="custom-control-label" for="catagoryCheck8">high
+                                                    fiber</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="catagoryCheck9">
+                                                <label class="custom-control-label" for="catagoryCheck9">vegan</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="catagoryCheck10">
+                                                <label class="custom-control-label" for="catagoryCheck10">low
+                                                    cholesterol</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="catagoryCheck11">
+                                                <label class="custom-control-label" for="catagoryCheck11">low
+                                                    sodium</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-xl-9 order-lg-last">
@@ -1266,7 +1349,7 @@
     <script src="./assets/js/isotope.pkgd.min.js"></script>
     <script src="./assets/js/slick/slick.min.js"></script>
     <script>
-        $('#specialModal').modal('show');
+        // $('#specialModal').modal('show');
         $(function () {
             var $grid = $('.grid').isotope();
             $('.product-group').on('click', 'a', function () {
@@ -1281,29 +1364,23 @@
                 prevArrow: '<a href="#"><img src="./assets/images/icons/product-arrow-prev.svg" /></a>',
                 nextArrow: '<a href="#"><img src="./assets/images/icons/product-arrow-next.svg" /></a>',
                 responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 5,
-                        }
-                    },
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 4,
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 3,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 2
-                        }
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
                     }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
                 ]
             });
         });
