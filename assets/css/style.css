@@ -12190,6 +12190,30 @@ header .form-search .input-group .form-control::placeholder {
   border-radius: 1rem;
 }
 
+.card-center-page .form-control {
+  border-color: #DDDDDD;
+}
+
+.card-center-page .form-control-lg {
+  font-size: 1rem;
+}
+
+.card-center-page .form-control::-webkit-input-placeholder {
+  color: #DDDDDD;
+}
+
+.card-center-page .form-control:-ms-input-placeholder {
+  color: #DDDDDD;
+}
+
+.card-center-page .form-control::-ms-input-placeholder {
+  color: #DDDDDD;
+}
+
+.card-center-page .form-control::placeholder {
+  color: #DDDDDD;
+}
+
 .btn-bt-orange {
   color: #fff;
 }

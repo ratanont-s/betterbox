@@ -1,4 +1,16 @@
 .card-center-page {
     max-width: 390px;
     border-radius: 1rem;
+
+    .form-control {
+        border-color: #DDDDDD;
+
+        &-lg {
+            font-size: 1rem;
+        }
+
+        &::placeholder {
+            color: #DDDDDD;
+        }
+    }
 }
