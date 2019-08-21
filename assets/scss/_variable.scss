@@ -5,6 +5,7 @@ $bt-blue: #1f3263;
 $bt-light: #f2f2f2;
 $bt-yellow: #FFF0A9;
 $bt-bluesky:#3AA3FF;
+$facebook:#4267B2;
 
 $primary: $bt-red;
 $secondary: $bt-orange;
@@ -15,7 +16,8 @@ $theme-colors: ("bt-red": $bt-red,
   "bt-blue": $bt-blue,
   "bt-light": $bt-light,
   "bt-yellow": $bt-yellow,
-  "bt-bluesky": $bt-bluesky);
+  "bt-bluesky": $bt-bluesky,
+  "facebook": $facebook);
 
 // Font
 $font-family-base: "Poppins",

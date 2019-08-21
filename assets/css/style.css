@@ -34,6 +34,7 @@
   --bt-light: #f2f2f2;
   --bt-yellow: #FFF0A9;
   --bt-bluesky: #3AA3FF;
+  --facebook: #4267B2;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2086,6 +2087,28 @@ pre code {
   background-color: #afd9ff;
 }
 
+.table-facebook,
+.table-facebook > th,
+.table-facebook > td {
+  background-color: #cad4e9;
+}
+
+.table-facebook th,
+.table-facebook td,
+.table-facebook thead th,
+.table-facebook tbody + tbody {
+  border-color: #9db0d7;
+}
+
+.table-hover .table-facebook:hover {
+  background-color: #b8c5e2;
+}
+
+.table-hover .table-facebook:hover > td,
+.table-hover .table-facebook:hover > th {
+  background-color: #b8c5e2;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -3298,6 +3321,42 @@ fieldset:disabled a.btn {
           box-shadow: 0 0 0 0.2rem rgba(88, 177, 255, 0.5);
 }
 
+.btn-facebook {
+  color: #fff;
+  background-color: #4267B2;
+  border-color: #4267B2;
+}
+
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #385796;
+  border-color: #34518d;
+}
+
+.btn-facebook:focus, .btn-facebook.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(94, 126, 190, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(94, 126, 190, 0.5);
+}
+
+.btn-facebook.disabled, .btn-facebook:disabled {
+  color: #fff;
+  background-color: #4267B2;
+  border-color: #4267B2;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
+.show > .btn-facebook.dropdown-toggle {
+  color: #fff;
+  background-color: #34518d;
+  border-color: #314c83;
+}
+
+.btn-facebook:not(:disabled):not(.disabled):active:focus, .btn-facebook:not(:disabled):not(.disabled).active:focus,
+.show > .btn-facebook.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(94, 126, 190, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(94, 126, 190, 0.5);
+}
+
 .btn-outline-primary {
   color: #ea3f40;
   border-color: #ea3f40;
@@ -3772,6 +3831,40 @@ fieldset:disabled a.btn {
 .show > .btn-outline-bt-bluesky.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(58, 163, 255, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(58, 163, 255, 0.5);
+}
+
+.btn-outline-facebook {
+  color: #4267B2;
+  border-color: #4267B2;
+}
+
+.btn-outline-facebook:hover {
+  color: #fff;
+  background-color: #4267B2;
+  border-color: #4267B2;
+}
+
+.btn-outline-facebook:focus, .btn-outline-facebook.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
+}
+
+.btn-outline-facebook.disabled, .btn-outline-facebook:disabled {
+  color: #4267B2;
+  background-color: transparent;
+}
+
+.btn-outline-facebook:not(:disabled):not(.disabled):active, .btn-outline-facebook:not(:disabled):not(.disabled).active,
+.show > .btn-outline-facebook.dropdown-toggle {
+  color: #fff;
+  background-color: #4267B2;
+  border-color: #4267B2;
+}
+
+.btn-outline-facebook:not(:disabled):not(.disabled):active:focus, .btn-outline-facebook:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-facebook.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
 }
 
 .btn-link {
@@ -6126,6 +6219,22 @@ a.badge-bt-bluesky:focus, a.badge-bt-bluesky.focus {
           box-shadow: 0 0 0 0.2rem rgba(58, 163, 255, 0.5);
 }
 
+.badge-facebook {
+  color: #fff;
+  background-color: #4267B2;
+}
+
+a.badge-facebook:hover, a.badge-facebook:focus {
+  color: #fff;
+  background-color: #34518d;
+}
+
+a.badge-facebook:focus, a.badge-facebook.focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(66, 103, 178, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6367,6 +6476,20 @@ a.badge-bt-bluesky:focus, a.badge-bt-bluesky.focus {
 
 .alert-bt-bluesky .alert-link {
   color: #153a5b;
+}
+
+.alert-facebook {
+  color: #22365d;
+  background-color: #d9e1f0;
+  border-color: #cad4e9;
+}
+
+.alert-facebook hr {
+  border-top-color: #b8c5e2;
+}
+
+.alert-facebook .alert-link {
+  color: #142038;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -6881,6 +7004,22 @@ a.badge-bt-bluesky:focus, a.badge-bt-bluesky.focus {
   color: #fff;
   background-color: #1e5585;
   border-color: #1e5585;
+}
+
+.list-group-item-facebook {
+  color: #22365d;
+  background-color: #cad4e9;
+}
+
+.list-group-item-facebook.list-group-item-action:hover, .list-group-item-facebook.list-group-item-action:focus {
+  color: #22365d;
+  background-color: #b8c5e2;
+}
+
+.list-group-item-facebook.list-group-item-action.active {
+  color: #fff;
+  background-color: #22365d;
+  border-color: #22365d;
 }
 
 .close {
@@ -7936,6 +8075,16 @@ button.bg-bt-bluesky:focus {
   background-color: #078bff !important;
 }
 
+.bg-facebook {
+  background-color: #4267B2 !important;
+}
+
+a.bg-facebook:hover, a.bg-facebook:focus,
+button.bg-facebook:hover,
+button.bg-facebook:focus {
+  background-color: #34518d !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -8038,6 +8187,10 @@ button.bg-bt-bluesky:focus {
 
 .border-bt-bluesky {
   border-color: #3AA3FF !important;
+}
+
+.border-facebook {
+  border-color: #4267B2 !important;
 }
 
 .border-white {
@@ -11464,6 +11617,14 @@ a.text-bt-bluesky:hover, a.text-bt-bluesky:focus {
   color: #007eed !important;
 }
 
+.text-facebook {
+  color: #4267B2 !important;
+}
+
+a.text-facebook:hover, a.text-facebook:focus {
+  color: #2d477a !important;
+}
+
 .text-body {
   color: #212529 !important;
 }
@@ -12024,6 +12185,11 @@ header .form-search .input-group .form-control::placeholder {
   color: #212529;
 }
 
+.card-center-page {
+  max-width: 390px;
+  border-radius: 1rem;
+}
+
 .btn-bt-orange {
   color: #fff;
 }
@@ -12372,6 +12538,23 @@ header .form-search .input-group .form-control::placeholder {
   width: 1px;
   background-color: #de1819;
   display: inline-block;
+}
+
+.center-page {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.center-page > .container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {

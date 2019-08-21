@@ -299,3 +299,14 @@
     }
   }
 }
+
+.center-page {
+  background-color: rgba(black, 0.7);
+
+  >.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
