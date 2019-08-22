@@ -12020,9 +12020,46 @@ a.text-facebook:hover, a.text-facebook:focus {
   opacity: 0.75;
 }
 
+/*
+ *  Bootstrap TouchSpin - v4.2.5
+ *  A mobile and touch friendly input spinner component for Bootstrap 3 & 4.
+ *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
+ *
+ *  Made by István Ujj-Mészáros
+ *  Under Apache License v2.0 License
+ */
+/* This CSS file is unnecessary if you are not using vertical buttons functionality */
+.bootstrap-touchspin .input-group-btn-vertical {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 11;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical > .btn {
+  position: absolute;
+  right: 0;
+  height: 50%;
+  padding: 0;
+  width: 2em;
+  text-align: center;
+  line-height: 1;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
+  border-radius: 0 4px 0 0;
+  top: 0;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+  border-radius: 0 0 4px 0;
+  bottom: 0;
+}
+
 header {
   background-color: #ea3f40;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1030;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -12190,6 +12227,12 @@ header .form-search .input-group .form-control::placeholder {
   border-radius: 1rem;
 }
 
+.card-center-page-sm {
+  max-width: 290px;
+  min-height: 152px;
+  border-radius: 0.5rem;
+}
+
 .card-center-page .form-control {
   border-color: #DDDDDD;
 }
@@ -12212,6 +12255,89 @@ header .form-search .input-group .form-control::placeholder {
 
 .card-center-page .form-control::placeholder {
   color: #DDDDDD;
+}
+
+.table-product thead {
+  background-color: #f2f2f2;
+}
+
+.table-product tbody tr td {
+  vertical-align: middle;
+}
+
+.table-product .product-img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.table-product .product-price {
+  color: #1f3263;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table-product .product-quantity-none * {
+  color: #BCBEC0;
+}
+
+.table-product .product-total {
+  background-color: #f2f2f2;
+}
+
+.table-product .product-total .product-price {
+  color: #ea3f40;
+}
+
+.table-product .product-subtotal .product-price, .table-product .product-discount .product-price, .table-product .product-total .product-price {
+  text-align: right;
+}
+
+.table-product .input-group {
+  max-width: 105px;
+  margin: 0 auto;
+}
+
+.table-product .input-group .form-control {
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.table-product .input-group-btn .btn {
+  border-color: #ced4da;
+}
+
+.table-product .input-group-prepend .btn {
+  border-right: 0;
+}
+
+.table-product .input-group-append .btn {
+  border-left: 0;
+}
+
+.btn-secondary {
+  color: #fff;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .btn-nav .btn {
+    padding: 0.75rem 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .btn-nav .btn {
+    font-size: small;
+  }
 }
 
 .btn-bt-orange {
@@ -12875,4 +13001,8 @@ section .sec-title::before {
 
 #sec9 h5 {
   font-size: 1.125rem;
+}
+
+main {
+  margin-top: 75px;
 }

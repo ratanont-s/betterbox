@@ -1,6 +1,7 @@
 header {
   background-color: $bt-red;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: $zindex-fixed;
   box-shadow: $box-shadow;

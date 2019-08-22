@@ -1,0 +1,20 @@
+.btn-secondary {
+    color: color-yiq(theme-color("dark"));
+
+    @include hover-focus {
+        color: color-yiq(theme-color("dark"));
+    }
+}
+
+.btn-nav {
+    .btn {
+        @include media-breakpoint-up(lg) {
+            padding: 0.75rem 1.5rem;
+            line-height: 1.5;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: small;
+        }
+    }
+}

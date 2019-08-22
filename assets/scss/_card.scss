@@ -2,6 +2,12 @@
     max-width: 390px;
     border-radius: 1rem;
 
+    &-sm {
+        max-width: 290px;
+        min-height: 152px;
+        border-radius: 0.5rem;
+    }
+
     .form-control {
         border-color: #DDDDDD;
 

@@ -1,0 +1,83 @@
+.table-product {
+    thead {
+        background-color: $bt-light;
+    }
+
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .product {
+        &-img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        &-price {
+            color: $bt-blue;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        &-quantity {
+            &-none {
+
+                * {
+                    color: $muted;
+                }
+            }
+        }
+
+        &-total {
+            background-color: $bt-light;
+
+            .product-price {
+                color: $primary;
+            }
+        }
+
+        &-subtotal,
+        &-discount,
+        &-total {
+            .product-price {
+                text-align: right;
+            }
+        }
+    }
+
+    .input-group {
+        max-width: 105px;
+        margin: 0 auto;
+
+        .form-control {
+            border-left: 0;
+            border-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        &-btn {
+            .btn {
+                border-color: $input-border-color;
+            }
+        }
+
+        &-prepend {
+            .btn {
+                border-right: 0;
+            }
+        }
+
+        &-append {
+            .btn {
+                border-left: 0;
+            }
+        }
+    }
+}
