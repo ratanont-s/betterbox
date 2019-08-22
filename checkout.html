@@ -104,129 +104,34 @@
         </nav>
     </header>
     <main>
-        <!-- Promotion header -->
-        <div class="promo-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg">
-                        <div class="promo-header-item">
-                            <span class="promo-header-icon">
-                                <img src="./assets/images/icons/free-shipping.svg" alt="">
-                            </span>
-                            Free standard shipping on any order of 500 THB or more
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="promo-header-item">
-                            <span class="promo-header-icon">
-                                <img src="./assets/images/icons/point.svg" alt="">
-                            </span>
-                            Earn 1 BetterBox Point for every 100 THB purchase
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Content -->
         <section>
             <div class="container">
-                <h3 class="mb-lg-4">Your cart items</h3>
-                <div class="table-responsive mb-lg-4">
-                    <table class="table table-borderless table-product">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Product</th>
-                                <th class="text-center">Price</th>
-                                <th class="text-center">Quantity</th>
-                                <th class="text-center">Total</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="product-quantity-none">
-                                <td>
-                                    <img src="./assets/images/product-01.png" alt="" class="product-img">
-                                </td>
-                                <td>
-                                    <div class="product-name">Bugles Original CornSnacks</div>
-                                    <small class="text-danger">Selected products have already been purchased.</small>
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-price">40.00 THB</div>
-                                </td>
-                                <td class="text-center">
-                                    <input type="text" value="0" name="quantityInput">
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-price">40.00 THB</div>
-                                </td>
-                                <td class="text-center">
-                                    <button class="btn btn-link">
-                                        <img src="./assets/images/icons/trash-alt.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class="">
-                                <td>
-                                    <img src="./assets/images/product-01.png" alt="" class="product-img">
-                                </td>
-                                <td>
-                                    <div class="product-name">Bugles Original CornSnacks</div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-price">40.00 THB</div>
-                                </td>
-                                <td class="text-center">
-                                    <input type="text" value="0" name="quantityInput">
-                                </td>
-                                <td class="text-center">
-                                    <div class="product-price">40.00 THB</div>
-                                </td>
-                                <td class="text-center">
-                                    <button class="btn btn-link btn-del">
-                                        <img src="./assets/images/icons/trash-alt.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <!-- Subtotal -->
-                            <tr class="product-subtotal">
-                                <td colspan="3"></td>
-                                <th>Subtotal</th>
-                                <td>
-                                    <div class="product-price">40.00 THB</div>
-                                </td>
-                            </tr>
-
-                            <!-- Discount -->
-                            <tr class="product-discount">
-                                <td colspan="3"></td>
-                                <th>Discount</th>
-                                <td>
-                                    <div class="product-price">10.00 THB</div>
-                                </td>
-                            </tr>
-
-                            <!-- Total -->
-                            <tr class="product-total">
-                                <td colspan="3"></td>
-                                <th>Total</th>
-                                <td>
-                                    <div class="product-price">130.00 THB</div>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="form-row justify-content-between btn-nav">
-                    <div class="col-auto">
-                        <a href="#" class="btn btn-secondary badge-pill">BACK TO SHOP</a>
+                <h3>Checkout</h3>
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./products.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h6>Your order</h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eveniet at eligendi pariatur
+                        nostrum sapiente minus maxime voluptate eaque nobis sint quo atque aperiam ipsum iusto vel.
+                        Consequuntur, facilis nesciunt!
                     </div>
-                    <div class="col-auto">
-                        <a href="#" class="btn btn-primary badge-pill">PROCEED TO CHECKOUT</a>
+                    <div class="col-lg-5 order-lg-first">
+                        <h6>Already a member?</h6>
+                        <button type="button" class="btn btn-facebook btn-block mb-3">
+                            <img src="./assets/images/icons/facebook-square.svg" class="mr-2" />
+                            Sign in with Facebook
+                        </button>
+                        <button class="btn btn-outline-secondary btn-block">Sign in with an email</button>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut debitis facere quaerat ut vitae.
+                        Autem voluptas rem harum quaerat nesciunt illum sequi voluptate eligendi omnis quae cumque
+                        nulla, veritatis repudiandae.
                     </div>
                 </div>
             </div>
@@ -291,16 +196,6 @@
     <!-- JS -->
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="./assets/js/sweetalert2.js"></script>
-    <script>
-        $(function () {
-            $("input[name='quantityInput']").TouchSpin({
-                buttondown_class: 'btn',
-                buttonup_class: 'btn',
-            });
-        });
-    </script>
 </body>
 
 </html>
