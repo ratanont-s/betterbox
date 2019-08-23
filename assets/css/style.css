@@ -14867,3 +14867,9 @@ section .sec-title::before {
 main {
   margin-top: 75px;
 }
+
+@media (max-width: 991.98px) {
+  main {
+    margin-top: 66px;
+  }
+}
