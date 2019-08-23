@@ -117,10 +117,84 @@
                 </nav>
                 <div class="row">
                     <div class="col-lg-7">
-                        <h6>Your order</h6>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eveniet at eligendi pariatur
-                        nostrum sapiente minus maxime voluptate eaque nobis sint quo atque aperiam ipsum iusto vel.
-                        Consequuntur, facilis nesciunt!
+                        <h6 class="title-border">Your order</h6>
+                        <div class="table-responsive mb-lg-4">
+                            <table class="table table-borderless table-order">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Product</th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-center">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="./assets/images/product-01.png" alt="" class="product-img">
+                                        </td>
+                                        <td>
+                                            <div class="product-name">Bugles Original CornSnacks</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="product-quantity">1</div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="product-price">40.00 THB</div>
+                                        </td>
+                                    </tr>
+
+
+
+                                <tfoot>
+                                    <!-- Subtotal -->
+                                    <tr class="product-subtotal">
+                                        <th>
+                                            </td>
+                                        <th colspan="2">Subtotal</th>
+                                        <td>
+                                            <div class="product-price">40.00 THB</div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Shipping Options -->
+                                    <tr class="product-shipping">
+                                        <th></th>
+                                        <th colspan="2">Shipping Options</th>
+                                        <td>
+                                            <div class="product-price">10.00 THB</div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Redeem -->
+                                    <tr class="product-redeem">
+                                        <th></th>
+                                        <th colspan="2">Redeem</th>
+                                        <td>
+                                            <div class="product-price">10.00 THB</div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Discount -->
+                                    <tr class="product-discount">
+                                        <th></th>
+                                        <th colspan="2">Discount</th>
+                                        <td>
+                                            <div class="product-price">10.00 THB</div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Total -->
+                                    <tr class="product-total">
+                                        <th></th>
+                                        <th colspan="2">Total</th>
+                                        <td>
+                                            <div class="product-price">130.00 THB</div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="col-lg-5 order-lg-first">
                         <h6>Already a member?</h6>
@@ -129,9 +203,69 @@
                             Sign in with Facebook
                         </button>
                         <button class="btn btn-outline-secondary btn-block">Sign in with an email</button>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut debitis facere quaerat ut vitae.
-                        Autem voluptas rem harum quaerat nesciunt illum sequi voluptate eligendi omnis quae cumque
-                        nulla, veritatis repudiandae.
+                        <hr class="w-25 my-lg-4">
+                        <div class="form-group">
+                            <h6>Not a member? Create an account</h6>
+                            <input type="email" class="form-control mb-3" placeholder="Your email sddress"
+                                autocomplete="off">
+                            <input type="password" class="form-control mb-3" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="fullnameInput">Full name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fullnameInput">Phone Number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="addressSelect">Address</label>
+                            <select class="form-control" id="addressSelect">
+                                <option selected>Please enter your address</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="provinceSelect">Province</label>
+                            <select class="form-control" id="provinceSelect">
+                                <option selected>Please choose your province</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="districtSelect">District</label>
+                            <select class="form-control" id="districtSelect">
+                                <option selected>Please choose your District</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="postcodeInput">Postcode</label>
+                            <input type="text" class="form-control" placeholder="Please choose your Postcode"
+                                id="postcodeInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="notesTextarea">Other Notes.</label>
+                            <textarea rows="4" class="form-control"
+                                placeholder="Note about your order e.g. special notes for delivery ..."
+                                id="notesTextarea"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Save in Address Book
+                            </label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                I accept the Terms and Conditions and the Privacy Policy and I have read and understood
+                                the Information therein
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg badge-pill px-3 px-lg-5">CONTINUE</button>
+                        </div>
                     </div>
                 </div>
             </div>

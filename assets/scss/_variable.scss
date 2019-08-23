@@ -1,7 +1,7 @@
 // Colors
 $bt-red: #ea3f40;
 $bt-orange: #f9a848;
-$bt-blue: #1f3263;
+$bt-blue: #1F3263;
 $bt-light: #f2f2f2;
 $bt-yellow: #FFF0A9;
 $bt-bluesky:#3AA3FF;
@@ -20,6 +20,9 @@ $theme-colors: ("bt-red": $bt-red,
   "bt-yellow": $bt-yellow,
   "bt-bluesky": $bt-bluesky,
   "facebook": $facebook);
+
+// Body
+$body-color:#222222;
 
 // Font
 $font-family-base: "Poppins",
@@ -41,3 +44,13 @@ $slick-dot-size: 10px;
 $navbar-dark-color: white;
 $navbar-dark-hover-color: $bt-orange;
 $navbar-dark-active-color: $bt-orange;
+
+// Form
+$input-placeholder-color:$muted;
+
+// Breadcrumb
+$breadcrumb-bg: transparent;
+$breadcrumb-padding-y:0;
+$breadcrumb-padding-x:0;
+$breadcrumb-divider-color:$body-color;
+$breadcrumb-active-color: $body-color;

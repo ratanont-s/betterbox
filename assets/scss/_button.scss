@@ -1,8 +1,17 @@
-.btn-secondary {
-    color: color-yiq(theme-color("dark"));
-
-    @include hover-focus {
+// Secondary
+.btn {
+    &-secondary {
         color: color-yiq(theme-color("dark"));
+
+        @include hover-focus {
+            color: color-yiq(theme-color("dark"));
+        }
+    }
+
+    &-outline-secondary {
+        @include hover-focus {
+            color: color-yiq(theme-color("dark"));
+        }
     }
 }
 

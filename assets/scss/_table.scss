@@ -81,3 +81,42 @@
         }
     }
 }
+
+// Table order
+.table-order {
+
+    thead,
+    tfoot>tr.product-total {
+        background-color: $bt-light;
+    }
+
+    tbody {
+        tr {
+
+            th,
+            td {
+                vertical-align: middle;
+
+            }
+        }
+    }
+
+    tfoot {
+        .product-price {
+            text-align: right;
+        }
+    }
+
+    .product {
+        &-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        &-price {
+            color: $bt-blue;
+            font-weight: 500;
+        }
+    }
+}

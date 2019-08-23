@@ -310,3 +310,18 @@
     align-items: center;
   }
 }
+
+.title-border {
+  position: relative;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 37px;
+    height: 3px;
+    background-color: $primary;
+  }
+}

@@ -1,0 +1,33 @@
+select.form-control {
+    background: $input-bg url('../images/icons/angle-down.svg') no-repeat right 0.75rem center;
+    background-size: auto;
+    appearance: none;
+}
+
+.form-check {
+    padding-left: 30px;
+
+    &-input[type='checkbox'] {
+        display: none;
+
+        &:checked~.form-check-label:before {
+            background: $input-bg url('../images/icons/tick.svg') no-repeat center center;
+            background-size: 60%;
+        }
+    }
+
+    &-label {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $input-border-color;
+            border-radius: 2px;
+        }
+    }
+}
