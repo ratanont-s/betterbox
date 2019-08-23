@@ -14119,6 +14119,7 @@ header .form-search .input-group .form-control::placeholder {
 .table-order .product-price {
   color: #1F3263;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .btn-secondary {
@@ -14167,11 +14168,11 @@ select.form-control {
   background-size: 60%;
 }
 
-.form-check-label {
+.form-check-input[type='checkbox'] ~ .form-check-label {
   position: relative;
 }
 
-.form-check-label::before {
+.form-check-input[type='checkbox'] ~ .form-check-label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -14180,6 +14181,30 @@ select.form-control {
   height: 20px;
   border: 1px solid #ced4da;
   border-radius: 2px;
+}
+
+.form-check-input[type='radio'] {
+  display: none;
+}
+
+.form-check-input[type='radio']:checked ~ .form-check-label:before {
+  background: #fff url("../images/icons/dot.svg") no-repeat center center;
+  background-size: 40%;
+}
+
+.form-check-input[type='radio'] ~ .form-check-label {
+  position: relative;
+}
+
+.form-check-input[type='radio'] ~ .form-check-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 100%;
 }
 
 .breadcrumb-item a {

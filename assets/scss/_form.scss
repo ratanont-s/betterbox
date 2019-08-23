@@ -14,20 +14,44 @@ select.form-control {
             background: $input-bg url('../images/icons/tick.svg') no-repeat center center;
             background-size: 60%;
         }
+
+        &~.form-check-label {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -30px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $input-border-color;
+                border-radius: 2px;
+            }
+        }
     }
 
-    &-label {
-        position: relative;
+    &-input[type='radio'] {
+        display: none;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -30px;
-            width: 20px;
-            height: 20px;
-            border: 1px solid $input-border-color;
-            border-radius: 2px;
+        &:checked~.form-check-label:before {
+            background: $input-bg url('../images/icons/dot.svg') no-repeat center center;
+            background-size: 40%;
+        }
+
+        &~.form-check-label {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -30px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $input-border-color;
+                border-radius: 100%;
+            }
         }
     }
 }
