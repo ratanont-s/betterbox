@@ -4,7 +4,7 @@ select.form-control {
     appearance: none;
 }
 
-.form-check {
+.form-check:not(.form-check-like) {
     padding-left: 30px;
 
     &-input[type='checkbox'] {
@@ -51,6 +51,77 @@ select.form-control {
                 height: 20px;
                 border: 1px solid $input-border-color;
                 border-radius: 100%;
+            }
+        }
+    }
+}
+
+.input-group {
+    &.bootstrap-touchspin {
+        max-width: 105px;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        border-left: 0;
+        border-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    &-btn {
+        .btn {
+            border-color: $input-border-color;
+            color: $input-border-color;
+        }
+    }
+
+    &-prepend {
+        .btn {
+            border-right: 0;
+        }
+    }
+
+    &-append {
+        .btn {
+            border-left: 0;
+        }
+    }
+}
+
+.form-check-like {
+    padding-left: calc(20px + 0.25rem);
+    margin-left: auto;
+
+    .form-check {
+        &-input {
+            display: none;
+
+            &:checked {
+                ~.form-check-label {
+                    &::before {
+                        background: url('../images/icons/like.svg') no-repeat center center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+
+        &-label {
+            cursor: pointer;
+            font-weight: 500;
+            color: $text-muted;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background: url('../images/icons/unlike.svg') no-repeat center center;
+                background-size: contain;
             }
         }
     }

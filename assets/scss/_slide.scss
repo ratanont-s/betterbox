@@ -1,0 +1,69 @@
+.nutrition-slide {
+    display: flex;
+
+    .slick-arrow {
+        padding-top: 20px;
+    }
+
+    &-item {
+        text-align: center;
+
+        img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+            margin: 0 auto 5px;
+        }
+
+        span {
+            color: $secondary;
+            font-size: 10px;
+        }
+
+        &.is-not {
+            .nutrition-slide-icon:after {
+                display: block;
+            }
+        }
+    }
+
+    &-icon {
+        position: relative;
+
+        &:after {
+            display: none;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../images/icons/is-not.svg') no-repeat center center;
+            background-size: contain;
+        }
+    }
+}
+
+.product-detail-slide {
+
+    &-for,
+    &-nav {
+        .slick {
+            &-slide {
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &-for {
+        margin-bottom: 1.5rem;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+    }
+}

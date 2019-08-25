@@ -1,0 +1,44 @@
+.list-nutrition {
+    list-style: none;
+    padding-left: 0;
+    text-transform: uppercase;
+
+    >li {
+        display: inline-block;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        h4 {
+            color: $primary;
+            margin-bottom: 0;
+        }
+
+        small {
+            font-size: x-small;
+
+            @include media-breakpoint-up(lg) {
+                font-size: small;
+            }
+        }
+    }
+}
+
+.list-share {
+    list-style: none;
+    padding-left: 0;
+
+    >li {
+        display: inline-block;
+
+        >a {
+            display: block;
+        }
+    }
+}
