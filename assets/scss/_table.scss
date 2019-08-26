@@ -234,3 +234,21 @@
         }
     }
 }
+
+.table-manage-point {
+    thead {
+        background-color: $bt-light;
+
+        tr th {
+            font-weight: 500;
+            white-space: nowrap;
+            border-width: 0;
+        }
+    }
+
+    tbody {
+        tr td {
+            border-top-width: 0;
+        }
+    }
+}

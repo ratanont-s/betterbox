@@ -15199,6 +15199,20 @@ header .form-search .input-group .form-control::placeholder {
   width: 1%;
 }
 
+.table-manage-point thead {
+  background-color: #f2f2f2;
+}
+
+.table-manage-point thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.table-manage-point tbody tr td {
+  border-top-width: 0;
+}
+
 .btn-secondary {
   color: #fff;
 }
@@ -15430,6 +15444,41 @@ select.form-control {
   background-size: auto;
   text-align: right;
   padding-right: 2.75rem;
+}
+
+.form-check-point {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.form-check-point .form-check-input {
+  display: none;
+}
+
+.form-check-point .form-check-input:checked ~ .form-check-label {
+  border-color: #f9a848;
+}
+
+.form-check-point .form-check-label {
+  display: block;
+  border: 3px solid transparent;
+  padding: 1rem .5rem;
+  border-radius: 5px;
+  background-color: #FFF0A9;
+  cursor: pointer;
+}
+
+.form-check-point .form-check-label .point {
+  font-weight: 500;
+}
+
+.form-check-point .form-check-label .price {
+  background-color: #f9a848;
+  display: block;
+  padding: .25rem 0;
+  color: white;
+  border-radius: 10rem;
+  font-weight: 600;
 }
 
 .breadcrumb {

@@ -208,3 +208,40 @@ select.form-control {
     text-align: right;
     padding-right: 2.75rem;
 }
+
+.form-check-point {
+    text-align: center;
+    margin-bottom: .5rem;
+
+    .form-check {
+        &-input {
+            display: none;
+
+            &:checked~.form-check-label {
+                border-color: $secondary;
+            }
+        }
+
+        &-label {
+            display: block;
+            border: 3px solid transparent;
+            padding: 1rem .5rem;
+            border-radius: 5px;
+            background-color: $bt-yellow;
+            cursor: pointer;
+
+            .point {
+                font-weight: 500;
+            }
+
+            .price {
+                background-color: $secondary;
+                display: block;
+                padding: .25rem 0;
+                color: white;
+                border-radius: 10rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
