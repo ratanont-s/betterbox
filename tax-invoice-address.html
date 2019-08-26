@@ -112,42 +112,85 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./products.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="./my-account.html">My Account</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Manage Payment</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tax Invoice Address Book</li>
                 </ol>
             </nav>
             <div class="row">
                 <div class="col-lg-8 col-xl-9">
-                    <h6>Credit/debit card <a href="javascript:void(0);" class="text-info ml-3">ADD CARD +</a></h6>
+                    <h6>TAX INVOICE ADDRESS BOOK <a href="javascript:void(0);" class="text-info ml-3">ADD TAX INVOICE
+                            ADDRESS +</a>
+                    </h6>
                     <div class="table-responsive">
-                        <table class="table table-manage-credit-card">
+                        <table class="table table-bt">
                             <thead>
                                 <tr>
-                                    <th colspan="2">Card Number</th>
-                                    <th>Expiry Date</th>
+                                    <th></th>
+                                    <th>Full name</th>
+                                    <th>Address</th>
+                                    <th>Postcode</th>
+                                    <th>Phone Number</th>
+                                    <th class="text-center">Tax Identification<br>Number</th>
+                                    <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <img src="./assets/images/logos/Visa.svg" alt="Visa" class="card-type">
+                                    <td class="form-check">
+                                        <input class="form-check-input" type="radio" name="addressBook"
+                                            id="addressBook1" value="" checked>
+                                        <label class="form-check-label" for="addressBook1"></label>
                                     </td>
                                     <td>
-                                        <span class="card-number">4564******5642</span>
+                                        <p>James Lovell</p>
+                                        <small class="text-muted">Other Notes : -</small>
                                     </td>
-                                    <td>Expires 01/20</td>
+                                    <td>
+                                        88 Moo 3 Chaeng Watthana Road.
+                                        Bangkok. 10210
+                                    </td>
+                                    <td>
+                                        นนทบุรี/ Nonthaburi -
+                                        ปากเกร็ด/ Pak Kret - 10210
+                                    </td>
+                                    <td>0-2141-9889</td>
+                                    <td>1234567890123</td>
+                                    <td>
+                                        <a href="javascript:void(0);">Edit</a>
+                                    </td>
                                     <td>
                                         <a href="javascript:void(0);" class="text-danger">Delete</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <img src="./assets/images/logos/Visa.svg" alt="Visa" class="card-type">
+                                    <td colspan="8" class="text-right border-0">
+                                        <a href="javascript:void(0);" class="text-secondary">Default Shipping
+                                            Address</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="form-check">
+                                        <input class="form-check-input" type="radio" name="addressBook"
+                                            id="addressBook2" value="">
+                                        <label class="form-check-label" for="addressBook2"></label>
                                     </td>
                                     <td>
-                                        <span class="card-number">4564******5642</span>
+                                        <p>James Lovell</p>
+                                        <small class="text-muted">Other Notes : -</small>
                                     </td>
-                                    <td>Expires 01/20</td>
+                                    <td>
+                                        88 Moo 3 Chaeng Watthana Road.
+                                        Bangkok. 10210
+                                    </td>
+                                    <td>
+                                        นนทบุรี/ Nonthaburi -
+                                        ปากเกร็ด/ Pak Kret - 10210
+                                    </td>
+                                    <td>0-2141-9889</td>
+                                    <td>1234567890123</td>
+                                    <td>
+                                        <a href="javascript:void(0);">Edit</a>
+                                    </td>
                                     <td>
                                         <a href="javascript:void(0);" class="text-danger">Delete</a>
                                     </td>
@@ -171,10 +214,10 @@
                             <a class="nav-link" href="#">Address Book</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tax Invoice Address</a>
+                            <a class="nav-link active" href="#">Tax Invoice Address</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Manage Credit Card</a>
+                            <a class="nav-link" href="#">Manage Credit Card</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Manage Point</a>

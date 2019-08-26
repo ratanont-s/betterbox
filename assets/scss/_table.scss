@@ -1,3 +1,27 @@
+.table-bt {
+    thead {
+        background-color: $bt-light;
+
+        tr th {
+            font-weight: 500;
+            white-space: nowrap;
+            border-width: 0;
+        }
+    }
+
+    tr {
+
+        th,
+        td {
+            border-top-color: $bt-light;
+        }
+    }
+
+    tfoot {
+        background-color: $bt-light;
+    }
+}
+
 .table-product {
     thead {
         background-color: $bt-light;

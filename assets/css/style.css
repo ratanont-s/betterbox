@@ -15013,6 +15013,25 @@ header .form-search .input-group .form-control::placeholder {
   margin-left: auto;
 }
 
+.table-bt thead {
+  background-color: #f2f2f2;
+}
+
+.table-bt thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.table-bt tr th,
+.table-bt tr td {
+  border-top-color: #f2f2f2;
+}
+
+.table-bt tfoot {
+  background-color: #f2f2f2;
+}
+
 .table-product thead {
   background-color: #f2f2f2;
 }
@@ -15479,6 +15498,20 @@ select.form-control {
   color: white;
   border-radius: 10rem;
   font-weight: 600;
+}
+
+td.form-check {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+td.form-check .form-check-label {
+  width: 20px;
+  height: 20px;
+}
+
+td.form-check .form-check-label::before {
+  left: 0 !important;
 }
 
 .breadcrumb {
