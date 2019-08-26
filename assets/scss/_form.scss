@@ -197,3 +197,14 @@ select.form-control {
         }
     }
 }
+
+.form-control-birthdate {
+    text-align: right;
+}
+
+.form-control.datepicker {
+    background: $input-bg url('../images/icons/calendar-alt.svg') no-repeat right .75rem center;
+    background-size: auto;
+    text-align: right;
+    padding-right: 2.75rem;
+}

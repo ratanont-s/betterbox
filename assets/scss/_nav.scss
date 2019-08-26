@@ -1,0 +1,18 @@
+.nav-my-account {
+    flex-direction: column;
+
+    .nav {
+        &-link {
+            color: $body-color;
+            @include rfs(18);
+
+            &:hover {
+                color: $bt-blue;
+            }
+
+            &.active {
+                font-weight: 600;
+            }
+        }
+    }
+}
