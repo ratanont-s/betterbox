@@ -7,50 +7,52 @@ select.form-control {
 .form-check:not(.form-check-like) {
     padding-left: 30px;
 
-    &-input[type='checkbox'] {
-        display: none;
+    .form-check {
+        &-input[type='checkbox'] {
+            display: none;
 
-        &:checked~.form-check-label:before {
-            background: $input-bg url('../images/icons/tick.svg') no-repeat center center;
-            background-size: 60%;
-        }
+            &:checked~.form-check-label:before {
+                background: $input-bg url('../images/icons/tick.svg') no-repeat center center;
+                background-size: 60%;
+            }
 
-        &~.form-check-label {
-            position: relative;
+            &~.form-check-label {
+                position: relative;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -30px;
-                width: 20px;
-                height: 20px;
-                border: 1px solid $input-border-color;
-                border-radius: 2px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $input-border-color;
+                    border-radius: 2px;
+                }
             }
         }
-    }
 
-    &-input[type='radio'] {
-        display: none;
+        &-input[type='radio'] {
+            display: none;
 
-        &:checked~.form-check-label:before {
-            background: $input-bg url('../images/icons/dot.svg') no-repeat center center;
-            background-size: 40%;
-        }
+            &:checked~.form-check-label:before {
+                background: $input-bg url('../images/icons/dot.svg') no-repeat center center;
+                background-size: 40%;
+            }
 
-        &~.form-check-label {
-            position: relative;
+            &~.form-check-label {
+                position: relative;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -30px;
-                width: 20px;
-                height: 20px;
-                border: 1px solid $input-border-color;
-                border-radius: 100%;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $input-border-color;
+                    border-radius: 100%;
+                }
             }
         }
     }
@@ -122,6 +124,75 @@ select.form-control {
                 height: 20px;
                 background: url('../images/icons/unlike.svg') no-repeat center center;
                 background-size: contain;
+            }
+        }
+    }
+}
+
+.form-check-payment {
+
+    .form-check {
+        &-input {
+            display: none;
+
+            &:checked~.form-check-label {
+                border-color: $info;
+
+                &:before {
+                    background: $input-bg url('../images/icons/dot.svg') no-repeat center center;
+                    background-size: 40%;
+                }
+            }
+
+            &~.form-check-label {
+                position: relative;
+                padding-left: calc(20px + 2rem);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 1rem;
+                    width: 20px;
+                    height: 20px;
+                    transform: translateY(-50%);
+                    border: 1px solid $input-border-color;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        &-label {
+            display: flex;
+            border: 1px solid $input-border-color;
+            border-radius: 5px;
+            padding: 1rem;
+
+            .detail {
+                h6 {
+                    font-weight: 500;
+                }
+
+                small {
+                    display: block;
+                }
+
+                b {
+                    font-weight: 600;
+                }
+            }
+
+            .add {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+
+                h6 {
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    margin-right: 0.25rem;
+                    color: $info;
+                }
             }
         }
     }

@@ -191,3 +191,21 @@
         }
     }
 }
+
+.card-add-credit {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+        padding-left: calc(20px + 2rem);
+    }
+
+    b {
+        font-weight: 600;
+    }
+
+    .add {
+        margin-left: auto;
+    }
+}
