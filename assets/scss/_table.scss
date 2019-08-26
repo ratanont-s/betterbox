@@ -121,3 +121,39 @@
         }
     }
 }
+
+.table-my-purchase {
+    thead {
+        background-color: $bt-light;
+
+        tr th {
+            font-weight: 500;
+        }
+    }
+
+    tr {
+
+        th,
+        td {
+            border-width: 0;
+        }
+    }
+
+    .product {
+        &-img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+    }
+
+    .status {
+        &-shipped {
+            color: $secondary;
+        }
+
+        &-derivered {
+            color: $success;
+        }
+    }
+}
