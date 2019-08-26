@@ -111,59 +111,93 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./products.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">My Account</li>
+                    <li class="breadcrumb-item"><a href="./my-account.html">My Account</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">My Purchase</li>
                 </ol>
             </nav>
             <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="row">
-                        <div class="col">
-                            <h6>My Account</h6>
-                        </div>
-                        <div class="col-auto">
-                            <a href="#" class="text-primary"><b>CHANGE PASSWORD</b></a>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="fullnameInput">Full name</label>
-                        <input type="text" class="form-control" placeholder="Please enter your Full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="fullnameInput">Email Address</label>
-                        <input type="text" class="form-control" placeholder="Please enter your Email Address">
-                    </div>
-                    <div class="form-group">
-                        <label for="fullnameInput">Mobile</label>
-                        <input type="text" class="form-control" placeholder="Please enter your Mobile">
-                    </div>
-                    <div class="form-group position-relative" id="birthdate">
-                        <label for="fullnameInput">Birthday</label>
-                        <input type="text" class="form-control datepicker">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="d-block">Gender</label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="genderRadio" id="femal" value="female"
-                                checked>
-                            <label class="form-check-label" for="femal">
-                                Female
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="genderRadio" id="male" value="male">
-                            <label class="form-check-label" for="male">
-                                Male
-                            </label>
-                        </div>
-                    </div>
-                    <div class="text-center text-lg-right">
-                        <button type="submit" class="btn btn-primary btn-pill">SAVE</button>
+                <div class="col-lg-8 col-xl-9">
+                    <h6>My Purchase</h6>
+                    <div class="table-responsive">
+                        <table class="table table-address-book">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th width='150'>Full name</th>
+                                    <th>Address</th>
+                                    <th>Postcode</th>
+                                    <th>Phone Number</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="form-check">
+                                        <input class="form-check-input" type="radio" name="addressBook"
+                                            id="addressBook1" value="" checked>
+                                        <label class="form-check-label" for="addressBook1"></label>
+                                    </td>
+                                    <td>
+                                        <p>James Lovell</p>
+                                        <small class="other-note">Other Notes : -</small>
+                                    </td>
+                                    <td>
+                                        88 Moo 3 Chaeng Watthana Road.
+                                        Bangkok. 10210
+                                    </td>
+                                    <td>
+                                        นนทบุรี/ Nonthaburi -
+                                        ปากเกร็ด/ Pak Kret - 10210
+                                    </td>
+                                    <td>0-2141-9889</td>
+                                    <td>
+                                        <a href="javascript:void(0);">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="default-address">
+                                        <a href="javascript:void(0);" class="text-secondary">Default Shipping
+                                            Address</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="form-check">
+                                        <input class="form-check-input" type="radio" name="addressBook"
+                                            id="addressBook2" value="">
+                                        <label class="form-check-label" for="addressBook2"></label>
+                                    </td>
+                                    <td>
+                                        <p>James Lovell</p>
+                                        <small class="other-note">Other Notes : -</small>
+                                    </td>
+                                    <td>
+                                        88 Moo 3 Chaeng Watthana Road.
+                                        Bangkok. 10210
+                                    </td>
+                                    <td>
+                                        นนทบุรี/ Nonthaburi -
+                                        ปากเกร็ด/ Pak Kret - 10210
+                                    </td>
+                                    <td>0-2141-9889</td>
+                                    <td>
+                                        <a href="javascript:void(0);">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 order-lg-first">
                     <ul class="nav nav-my-account">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">My Account</a>
+                            <a class="nav-link" href="#">My Account</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">My Purchase</a>
@@ -172,7 +206,7 @@
                             <a class="nav-link" href="#">Wishlist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Address Book</a>
+                            <a class="nav-link active" href="#">Address Book</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tax Invoice Address</a>

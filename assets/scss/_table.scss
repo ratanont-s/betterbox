@@ -157,3 +157,46 @@
         }
     }
 }
+
+.table-address-book {
+    thead {
+        background-color: $bt-light;
+
+        tr th {
+            font-weight: 500;
+            white-space: nowrap;
+            border-width: 0;
+        }
+    }
+
+    tbody {
+        tr td {
+            border-top-color: $bt-light;
+
+            &.form-check {
+                padding-left: 0;
+                padding-right: 0;
+
+                .form-check-label {
+                    width: 20px;
+                    height: 20px;
+
+                    &:before {
+                        left: 0 !important;
+                    }
+                }
+            }
+
+            .other-note {
+                display: block;
+                color: $muted;
+                margin-top: 32px;
+            }
+
+            &.default-address {
+                border-top-width: 0;
+                text-align: right;
+            }
+        }
+    }
+}

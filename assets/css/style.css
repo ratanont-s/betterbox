@@ -15130,6 +15130,45 @@ header .form-search .input-group .form-control::placeholder {
   color: #28a745;
 }
 
+.table-address-book thead {
+  background-color: #f2f2f2;
+}
+
+.table-address-book thead tr th {
+  font-weight: 500;
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.table-address-book tbody tr td {
+  border-top-color: #f2f2f2;
+}
+
+.table-address-book tbody tr td.form-check {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.table-address-book tbody tr td.form-check .form-check-label {
+  width: 20px;
+  height: 20px;
+}
+
+.table-address-book tbody tr td.form-check .form-check-label:before {
+  left: 0 !important;
+}
+
+.table-address-book tbody tr td .other-note {
+  display: block;
+  color: #BCBEC0;
+  margin-top: 32px;
+}
+
+.table-address-book tbody tr td.default-address {
+  border-top-width: 0;
+  text-align: right;
+}
+
 .btn-secondary {
   color: #fff;
 }
