@@ -200,3 +200,37 @@
         }
     }
 }
+
+.table-manage-credit-card {
+    thead {
+        background-color: $bt-light;
+
+        tr th {
+            font-weight: 500;
+            white-space: nowrap;
+            border-width: 0;
+        }
+    }
+
+    tbody {
+        tr td {
+            border-top-color: $bt-light;
+            vertical-align: middle;
+
+            .card-type {
+                width: 60px;
+                height: 20px;
+                object-fit: contain;
+            }
+
+            .card-number {
+                font-weight: 500;
+            }
+
+            &:first-child,
+            &:last-child {
+                width: 1%;
+            }
+        }
+    }
+}
