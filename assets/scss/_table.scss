@@ -143,6 +143,14 @@
             font-weight: 500;
             white-space: nowrap;
         }
+
+        &-redeem {
+            &-code {
+                color: $bt-blue;
+                font-weight: 500;
+                text-align: right;
+            }
+        }
     }
 }
 

@@ -15121,6 +15121,12 @@ header .form-search .input-group .form-control::placeholder {
   white-space: nowrap;
 }
 
+.table-order .product-redeem-code {
+  color: #1F3263;
+  font-weight: 500;
+  text-align: right;
+}
+
 .table-my-purchase thead {
   background-color: #f2f2f2;
 }
@@ -15571,6 +15577,91 @@ td.form-check .form-check-label::before {
   display: block;
 }
 
+.list-purchase-status {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-purchase-status li {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+.list-purchase-status li::before, .list-purchase-status li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 35px;
+  background-color: #f2f2f2;
+  z-index: 0;
+}
+
+.list-purchase-status li::before {
+  left: 0;
+}
+
+.list-purchase-status li::after {
+  right: 0;
+}
+
+.list-purchase-status li:first-child::before, .list-purchase-status li:last-child::after {
+  display: none;
+}
+
+.list-purchase-status li.done::after {
+  background-color: #f9a848;
+}
+
+.list-purchase-status li.done + .done::before,
+.list-purchase-status li.done + .current::before {
+  background-color: #f9a848;
+}
+
+.list-purchase-status li .number {
+  position: relative;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9a848;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+}
+
+.list-purchase-status li .detail {
+  text-align: center;
+  font-size: x-small;
+}
+
+@media (min-width: 992px) {
+  .list-purchase-status li .detail {
+    font-size: small;
+  }
+}
+
+.list-purchase-status li .detail-date, .list-purchase-status li .detail-time {
+  color: #BCBEC0;
+  font-weight: 300;
+}
+
 .nutrition-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15645,6 +15736,8 @@ td.form-check .form-check-label::before {
 
 .nav-my-account .nav-link {
   color: #222222;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 1.125rem;
 }
 
