@@ -5844,7 +5844,7 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #222222;
+  color: #BCBEC0;
   content: "/";
 }
 
@@ -5857,7 +5857,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-  color: #222222;
+  color: #BCBEC0;
 }
 
 .pagination {
@@ -15522,9 +15522,24 @@ td.form-check .form-check-label::before {
 
 .breadcrumb {
   font-weight: 300;
+  font-size: x-small;
+}
+
+@media (min-width: 992px) {
+  .breadcrumb {
+    font-size: 1rem;
+  }
+}
+
+.breadcrumb-item {
+  color: #BCBEC0;
 }
 
 .breadcrumb-item a {
+  color: #BCBEC0;
+}
+
+.breadcrumb-item a:hover {
   color: #222222;
 }
 
