@@ -2,6 +2,7 @@ select.form-control {
     background: $input-bg url('../images/icons/angle-down.svg') no-repeat right 0.75rem center;
     background-size: auto;
     appearance: none;
+    padding-right: 2rem;
 }
 
 .form-check:not(.form-check-like) {
