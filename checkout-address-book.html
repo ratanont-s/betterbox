@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BetterBox</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <button class="navbar-toggler order-lg-1" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" alt="BetterBox" />
+            </a>
+            <ul class="navbar-nav order-lg-3">
+                <li class="nav-item">
+                    <div class="nav-link nav-language">
+                        <a href="#" class="active">EN</a>
+                        <span>/</span>
+                        <a href="#">TH</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
+                <form class="form-inline form-search">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OFFICE SNACKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-flex align-items-center">
+                            sign in
+                            <span class="ml-2"><img src="./assets/images/icons/user.svg" alt="Username..."></span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-cart">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./assets/images/icons/shopping-cart.svg" alt="">
+                            my Cart(2)
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-img">
+                                    <img src="./assets/images/product-01.png" alt="">
+                                </div>
+                                <div class="dropdown-detail">
+                                    Bugles Original Corn
+                                    Snacks
+                                    <h6 class="mb-0 text-bt-blue">40.00 THB</h6>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="dropdown-img">
+                                    <img src="./assets/images/product-01.png" alt="">
+                                </div>
+                                <div class="dropdown-detail">
+                                    Bugles Original Corn
+                                    Snacks
+                                    <h6 class="mb-0 text-bt-blue">40.00 THB</h6>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <div class="px-4">
+                                <div class="row text-right text-bt-blue">
+                                    <div class="col">
+                                        Subtotal:
+                                    </div>
+                                    <div class="col">
+                                        80.00 THB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="px-4">
+                                <a class="btn btn-outline-secondary btn-block px-4 badge-pill" href="#">view cart</a>
+                                <a class="btn btn-primary btn-block px-4 badge-pill" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Content -->
+        <section class="container">
+            <h3>Checkout</h3>
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./products.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <h6 class="title-border">YOUR ORDER</h6>
+                    <div class="table-responsive mb-lg-4">
+                        <table class="table table-borderless table-order">
+                            <caption>You will earn <b>30 BetterBox Points</b> from this order (1 BetterBox Point = 1
+                                THB)</caption>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Product</th>
+                                    <th class="text-center">Quantity</th>
+                                    <th class="text-center">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/images/product-01.png" alt="" class="product-img">
+                                    </td>
+                                    <td>
+                                        <div class="product-name">Bugles Original CornSnacks</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="product-quantity">1</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="product-price">40.00 THB</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/images/product-01.png" alt="" class="product-img">
+                                    </td>
+                                    <td>
+                                        <div class="product-name">Bugles Original CornSnacks</div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="product-quantity">1</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="product-price">40.00 THB</div>
+                                    </td>
+                                </tr>
+                            <tfoot>
+                                <!-- Subtotal -->
+                                <tr class="product-subtotal">
+                                    <th>
+                                        </td>
+                                    <th colspan="2">Subtotal</th>
+                                    <td>
+                                        <div class="product-price">40.00 THB</div>
+                                    </td>
+                                </tr>
+
+                                <!-- Shipping Options -->
+                                <tr class="product-shipping">
+                                    <th></th>
+                                    <th colspan="2">
+                                        Shipping Options
+                                        <div class="font-weight-normal mt-2">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="shippingRadio"
+                                                    id="shippingRadio1" value="option1" checked>
+                                                <label class="form-check-label" for="shippingRadio1">
+                                                    Standard shipping (2-3 Days)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="shippingRadio"
+                                                    id="shippingRadio2" value="option2">
+                                                <label class="form-check-label" for="shippingRadio2">
+                                                    Same - day delivery
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="product-price">10.00 THB</div>
+                                    </td>
+                                </tr>
+
+                                <!-- Redeem -->
+                                <tr class="product-redeem">
+                                    <th></th>
+                                    <th colspan="3">
+                                        Redeem
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Enter coupon code">
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-secondary" type="button">Redeem</button>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                                <!-- Discount -->
+                                <tr class="product-discount">
+                                    <th></th>
+                                    <th colspan="2">Discount</th>
+                                    <td>
+                                        <div class="product-price">10.00 THB</div>
+                                    </td>
+                                </tr>
+
+                                <!-- Total -->
+                                <tr class="product-total">
+                                    <th></th>
+                                    <th colspan="2">Total</th>
+                                    <td>
+                                        <div class="product-price text-primary">130.00 THB</div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked>
+                        <label class="form-check-label" for="defaultCheck3">
+                            Make it a gift (+20 THB) Write your wishes card below. We will make it a great gift for
+                            your special person.
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" rows="4" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-secondary">Request Tax Invoice</button>
+                </div>
+                <div class="col-lg-5 order-lg-first">
+                    <h6 class="title-border">SELECT ADDRESS BOOK</h6>
+                    <div class="form-group">
+                        <label for="fullnameInput">Full name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="fullnameInput">Phone Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="addressSelect">Address</label>
+                        <select class="form-control" id="addressSelect">
+                            <option selected>Please enter your address</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="provinceSelect">Province</label>
+                        <select class="form-control" id="provinceSelect">
+                            <option selected>Please choose your province</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="districtSelect">District</label>
+                        <select class="form-control" id="districtSelect">
+                            <option selected>Please choose your District</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcodeInput">Postcode</label>
+                        <input type="text" class="form-control" placeholder="Please choose your Postcode"
+                            id="postcodeInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="notesTextarea">Other Notes.</label>
+                        <textarea rows="4" class="form-control"
+                            placeholder="Note about your order e.g. special notes for delivery ..."
+                            id="notesTextarea"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Save in Address Book
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            I accept the Terms and Conditions and the Privacy Policy and I have read and understood
+                            the Information therein
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-pill mt-lg-4">CONTINUE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact us -->
+        <section id="sec9">
+            <div class="container text-bt-blue">
+                <h1 class="sec-title">Contact us</h1>
+                <ul class="nav justify-content-center mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <img src="./assets/images/facebook.svg" alt="facebook" class="img-fluid" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <img src="./assets/images/instagram.svg" alt="instagram" class="img-fluid" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <img src="./assets/images/line.svg" alt="line" class="img-fluid" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <img src="./assets/images/linkedin.svg" alt="linkedin" class="img-fluid" />
+                        </a>
+                    </li>
+                </ul>
+                <h5 id="follow-us">
+                    <span class="text-bt-red d-block">Follow us on Instragram </span>
+                    @betterboxbkk
+                </h5>
+                <div class="form-row">
+                    <div class="col-6 col-sm-3">
+                        <div class="card">
+                            <img src="./assets/images/ig-1.jpg" alt="..." class="card-img" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card">
+                            <img src="./assets/images/ig-2.jpg" alt="..." class="card-img" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card">
+                            <img src="./assets/images/ig-3.jpg" alt="..." class="card-img" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card">
+                            <img src="./assets/images/ig-4.jpg" alt="..." class="card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
