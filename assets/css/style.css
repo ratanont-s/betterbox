@@ -15520,6 +15520,78 @@ td.form-check .form-check-label::before {
   left: 0 !important;
 }
 
+.form-check-card .form-check-input {
+  display: none;
+}
+
+.form-check-card .form-check-input:checked ~ .form-check-label {
+  border-color: #3AA3FF;
+}
+
+.form-check-card .form-check-input:checked ~ .form-check-label:before {
+  background: #fff url("../images/icons/dot.svg") no-repeat center center;
+  background-size: 40%;
+}
+
+.form-check-card .form-check-input ~ .form-check-label {
+  position: relative;
+  padding-left: calc(20px + 2rem);
+}
+
+.form-check-card .form-check-input ~ .form-check-label::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 100%;
+}
+
+.form-check-card .form-check-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.form-check-card .form-check-label .detail-name {
+  font-weight: 500;
+  margin-bottom: .25rem;
+}
+
+.form-check-card .form-check-label .detail-address {
+  margin-bottom: 0.5rem;
+}
+
+.form-check-card .form-check-label .detail-note {
+  color: #BCBEC0;
+  font-weight: 300;
+  font-size: small;
+}
+
+.form-check-card .form-check-label .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-check-card .form-check-label .action a:hover {
+  opacity: .6;
+}
+
+.form-check-card .form-check-label .action-edit {
+  margin-right: 0.5rem;
+}
+
+.form-check-card .form-check-label .action-delete {
+  color: #dc3545;
+}
+
 .breadcrumb {
   font-weight: 300;
   font-size: x-small;

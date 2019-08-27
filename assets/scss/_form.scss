@@ -259,3 +259,79 @@ td.form-check {
         }
     }
 }
+
+.form-check-card {
+    .form-check {
+        &-input {
+            display: none;
+
+            &:checked~.form-check-label {
+                border-color: $info;
+
+                &:before {
+                    background: $input-bg url('../images/icons/dot.svg') no-repeat center center;
+                    background-size: 40%;
+                }
+            }
+
+            &~.form-check-label {
+                position: relative;
+                padding-left: calc(20px + 2rem);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $input-border-color;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        &-label {
+            display: flex;
+            border: 1px solid $input-border-color;
+            border-radius: 5px;
+            padding: 1rem;
+            cursor: pointer;
+
+            .detail {
+                &-name {
+                    font-weight: 500;
+                    margin-bottom: .25rem;
+                }
+
+                &-address {
+                    margin-bottom: 0.5rem;
+                }
+
+                &-note {
+                    color: $muted;
+                    font-weight: 300;
+                    font-size: small;
+                }
+            }
+
+            .action {
+                display: flex;
+
+                a {
+                    @include hover {
+                        opacity: .6;
+                    }
+                }
+
+                &-edit {
+                    margin-right: 0.5rem;
+                }
+
+                &-delete {
+                    color: $danger;
+                }
+            }
+        }
+    }
+}
