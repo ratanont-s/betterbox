@@ -15879,6 +15879,10 @@ td.form-check .form-check-label::before {
   padding-top: 0;
 }
 
+.modal-select-tax-invoice .modal-content {
+  max-width: 500px;
+}
+
 .btn-bt-orange {
   color: #fff;
 }
