@@ -8,9 +8,9 @@
 
 body {
   &.swal2-shown {
-    @include not(
-      '.swal2-no-backdrop',
+    @include not('.swal2-no-backdrop',
       '.swal2-toast-shown'
+
     ) {
       overflow: hidden; // not overflow-y because of Sarari, #1253
     }
@@ -29,7 +29,7 @@ body {
       max-width: calc(100% - #{$swal2-container-padding} * 2);
       background-color: transparent;
 
-      & > .swal2-modal {
+      &>.swal2-modal {
         box-shadow: 0 0 10px $swal2-backdrop;
       }
 
@@ -161,22 +161,22 @@ body {
     justify-content: flex-end;
   }
 
-  &.swal2-bottom > :first-child,
-  &.swal2-bottom-start > :first-child,
-  &.swal2-bottom-left > :first-child,
-  &.swal2-bottom-end > :first-child,
-  &.swal2-bottom-right > :first-child {
+  &.swal2-bottom> :first-child,
+  &.swal2-bottom-start> :first-child,
+  &.swal2-bottom-left> :first-child,
+  &.swal2-bottom-end> :first-child,
+  &.swal2-bottom-right> :first-child {
     margin-top: auto;
   }
 
-  &.swal2-grow-fullscreen > .swal2-modal {
+  &.swal2-grow-fullscreen>.swal2-modal {
     display: flex !important;
     flex: 1;
     align-self: stretch;
     justify-content: center;
   }
 
-  &.swal2-grow-row > .swal2-modal {
+  &.swal2-grow-row>.swal2-modal {
     display: flex !important;
     flex: 1;
     align-content: center;
@@ -211,7 +211,7 @@ body {
       align-items: flex-end;
     }
 
-    & > .swal2-modal {
+    &>.swal2-modal {
       display: flex !important;
       flex: 1;
       align-content: center;
@@ -219,8 +219,7 @@ body {
     }
   }
 
-  @include not(
-    '.swal2-top',
+  @include not('.swal2-top',
     '.swal2-top-start',
     '.swal2-top-end',
     '.swal2-top-left',
@@ -235,8 +234,9 @@ body {
     '.swal2-bottom-left',
     '.swal2-bottom-right',
     '.swal2-grow-fullscreen'
+
   ) {
-    & > .swal2-modal {
+    &>.swal2-modal {
       margin: auto;
     }
   }
@@ -371,7 +371,7 @@ body {
   margin: .3125em;
   padding: .625em 2em;
   box-shadow: none;
-  font-weight: 500;
+  font-weight: 400;
 
   &:not([disabled]) {
     cursor: pointer;
@@ -421,7 +421,8 @@ body {
 
 .swal2-close {
   position: $swal2-close-button-position;
-  z-index: 2; /* 1617 */
+  z-index: 2;
+  /* 1617 */
   top: $swal2-close-button-gap;
   right: $swal2-close-button-gap;
   justify-content: center;
@@ -445,15 +446,6 @@ body {
     background: $swal2-close-button-hover-background;
     color: $swal2-close-button-hover-color;
   }
-}
-
-> .swal2-input,
-> .swal2-file,
-> .swal2-textarea,
-> .swal2-select,
-> .swal2-radio,
-> .swal2-checkbox {
-  display: none;
 }
 
 .swal2-content {
@@ -618,7 +610,8 @@ body {
 }
 
 // IE11
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .swal2-range {
     input {
       width: 100% !important;
@@ -724,7 +717,8 @@ body {
   &.swal2-success {
     border-color: $swal2-success;
 
-    [class^='swal2-success-circular-line'] { // Emulate moving circular line
+    [class^='swal2-success-circular-line'] {
+      // Emulate moving circular line
       position: absolute;
       width: 3.75em;
       height: 7.5em;
@@ -748,7 +742,8 @@ body {
       }
     }
 
-    .swal2-success-ring { // Ring
+    .swal2-success-ring {
+      // Ring
       position: absolute;
       z-index: 2;
       top: -.25em;
@@ -760,7 +755,8 @@ body {
       border-radius: 50%;
     }
 
-    .swal2-success-fix { // Hide corners left from animation
+    .swal2-success-fix {
+      // Hide corners left from animation
       position: absolute;
       z-index: 1;
       top: .5em;
@@ -820,12 +816,12 @@ body {
     &.swal2-active-progress-step {
       background: $swal2-active-step-background;
 
-      ~ .swal2-progress-step {
+      ~.swal2-progress-step {
         background: $swal2-progress-step-background;
         color: $swal2-progress-step-color;
       }
 
-      ~ .swal2-progress-step-line {
+      ~.swal2-progress-step-line {
         background: $swal2-progress-step-background;
       }
     }
@@ -906,13 +902,13 @@ body {
 @media print {
   body {
     &.swal2-shown {
-      @include not(
-        '.swal2-no-backdrop',
+      @include not('.swal2-no-backdrop',
         '.swal2-toast-shown'
+
       ) {
         overflow-y: scroll !important;
 
-        > [aria-hidden='true'] {
+        >[aria-hidden='true'] {
           display: none;
         }
 

@@ -4,8 +4,8 @@
 @import "../js/slick/slick.scss";
 @import "../js/slick/slick-theme.scss";
 @import "./bootstrap-touchspin/jquery.bootstrap-touchspin.scss";
-@import './sweetalert/sweetalert.scss';
 @import './bootstrap-datepicker/bootstrap-datepicker3.scss';
+@import './sweetalert2/sweetalert2.scss';
 @import "./header";
 @import './page-header';
 @import './sidebar';
@@ -18,6 +18,7 @@
 @import './slide';
 @import './nav';
 @import './pagination';
+@import './modal';
 
 @import "./custom";
 

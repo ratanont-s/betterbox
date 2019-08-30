@@ -1,0 +1,29 @@
+.modal-form {
+    .modal {
+        &-content {
+            max-width: 390px;
+        }
+
+        &-header {
+            flex-direction: column;
+            padding-bottom: 0.5rem;
+
+            .close {
+                position: static;
+            }
+        }
+
+        &-title {
+            line-height: 1.25;
+        }
+
+        &-body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &-footer {
+            padding-top: 0;
+        }
+    }
+}

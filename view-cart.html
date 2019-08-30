@@ -296,7 +296,7 @@
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script src="./assets/js/sweetalert2.min.js"></script>
     <script>
         $(function () {
             $("input[name='quantityInput']").TouchSpin({
@@ -304,7 +304,22 @@
                 buttonup_class: 'btn',
             });
             $('.btn-del').click(function () {
-                Swal.fire('Hello world!')
+                Swal.fire({
+                    text: "Are you sure to delete this item?",
+                    showCancelButton: true,
+                    cancelButtonText: 'No',
+                    confirmButtonText: 'Yes',
+                    reverseButtons: true,
+                    showCloseButton: true,
+                }).then((result) => {
+                    if (result.value) {
+                        Swal.fire(
+                            'Deleted!',
+                            'Your file has been deleted.',
+                            'success'
+                        )
+                    }
+                })
             });
         });
     </script>

@@ -50,7 +50,7 @@
                             <a class="nav-link" href="#">CONTACT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-lg-flex align-items-center">
+                            <a class="nav-link d-lg-flex align-items-center" href="#signInModal" data-toggle="modal">
                                 sign in
                                 <span class="ml-2"><img src="./assets/images/icons/user.svg" alt="Username..."></span>
                             </a>
@@ -1253,7 +1253,7 @@
         </section>
     </main>
 
-    <!-- Modal -->
+    <!-- Modal Special -->
     <div class="modal fade modal-custom" tabindex="-1" role="dialog" id="specialModal">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -1309,12 +1309,92 @@
         </div>
     </div>
 
+    <!-- Modal Sign-in -->
+    <div class="modal modal-form fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title" id="signInModalLabel">SIGN IN</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Not a member? <a href="#signUpModal" data-toggle="modal" class="text-secondary">Sign up</a></p>
+                    <button type="button" class="btn btn-facebook btn-block mb-3"><img
+                            src="./assets/images/icons/facebook-square.svg" class="mr-2" />Sign
+                        in with Facebook</button>
+                    <div class="text-center">OR</div>
+                    <div class="form-group">
+                        <label for="emailInput" class="small">Email<span class="text-danger">*</span></label>
+                        <input type="email" id="emailInput" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput" class="small">Password<span class="text-danger">*</span></label>
+                        <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+                    </div>
+                    <p class="text-center small text-muted">Forgot password? <a href="#" class="text-secondary"
+                            id="sendResetPassword">Send reset
+                            email</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-pill btn-block">SIGN IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sign-up -->
+    <div class="modal modal-form fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title" id="signUpModalLabel">CREATE YOUR <span class="d-block">ACCOUNT</span></h3>
+                </div>
+                <div class="modal-body">
+                    <p>Not a member? <a href="#signInModal" data-toggle="modal" class="text-secondary">Sign in</a></p>
+                    <button type="button" class="btn btn-facebook btn-block mb-3"><img
+                            src="./assets/images/icons/facebook-square.svg" class="mr-2" />Sign
+                        in with Facebook</button>
+                    <div class="form-row">
+                        <div class="col-6 form-group">
+                            <label for="fnameInput" class="small">First name<span class="text-danger">*</span></label>
+                            <input type="text" id="fnameInput" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-6 form-group">
+                            <label for="lnameInput" class="small">Last name<span class="text-danger">*</span></label>
+                            <input type="text" id="lnameInput" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput" class="small">Email<span class="text-danger">*</span></label>
+                        <input type="email" id="emailInput" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput" class="small">Password<span class="text-danger">*</span></label>
+                        <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-pill btn-block" id="btnSignUp">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JS -->
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/jquery.parallax.min.js"></script>
     <script src="./assets/js/isotope.pkgd.min.js"></script>
     <script src="./assets/js/slick/slick.min.js"></script>
+    <script src="./assets/js/sweetalert2.min.js"></script>
     <script>
         $('#specialModal').modal('show');
         $(function () {
