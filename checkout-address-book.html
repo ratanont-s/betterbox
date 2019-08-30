@@ -120,6 +120,62 @@
             </nav>
 
             <div class="row">
+                <div class="col-lg-5">
+                    <h6 class="title-border">SELECT ADDRESS BOOK</h6>
+                    <div class="form-group">
+                        <label for="fullnameInput">Full name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="fullnameInput">Phone Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="addressInput">Address</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="provinceSelect">Province</label>
+                        <select class="form-control" id="provinceSelect">
+                            <option selected>Please choose your province</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="districtSelect">District</label>
+                        <select class="form-control" id="districtSelect">
+                            <option selected>Please choose your District</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcodeInput">Postcode</label>
+                        <input type="text" class="form-control" placeholder="Please choose your Postcode"
+                            id="postcodeInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="notesTextarea">Other Notes.</label>
+                        <textarea rows="4" class="form-control"
+                            placeholder="Note about your order e.g. special notes for delivery ..."
+                            id="notesTextarea"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Save in Address Book
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            I accept the Terms and Conditions and the Privacy Policy and I have read and understood
+                            the Information therein
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-pill mt-lg-4">CONTINUE</button>
+                    </div>
+                </div>
                 <div class="col-lg-7">
                     <h6 class="title-border">YOUR ORDER</h6>
                     <div class="table-responsive mb-lg-4">
@@ -248,65 +304,6 @@
                         <textarea name="" id="" rows="4" class="form-control"></textarea>
                     </div>
                     <button type="submit" class="btn btn-outline-secondary">Request Tax Invoice</button>
-                </div>
-                <div class="col-lg-5 order-lg-first">
-                    <h6 class="title-border">SELECT ADDRESS BOOK</h6>
-                    <div class="form-group">
-                        <label for="fullnameInput">Full name</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="fullnameInput">Phone Number</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="addressSelect">Address</label>
-                        <select class="form-control" id="addressSelect">
-                            <option selected>Please enter your address</option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="provinceSelect">Province</label>
-                        <select class="form-control" id="provinceSelect">
-                            <option selected>Please choose your province</option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="districtSelect">District</label>
-                        <select class="form-control" id="districtSelect">
-                            <option selected>Please choose your District</option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="postcodeInput">Postcode</label>
-                        <input type="text" class="form-control" placeholder="Please choose your Postcode"
-                            id="postcodeInput">
-                    </div>
-                    <div class="form-group">
-                        <label for="notesTextarea">Other Notes.</label>
-                        <textarea rows="4" class="form-control"
-                            placeholder="Note about your order e.g. special notes for delivery ..."
-                            id="notesTextarea"></textarea>
-                    </div>
-                    <div class="form-group form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Save in Address Book
-                        </label>
-                    </div>
-                    <div class="form-group form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck2">
-                            I accept the Terms and Conditions and the Privacy Policy and I have read and understood
-                            the Information therein
-                        </label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-primary btn-pill mt-lg-4">CONTINUE</button>
-                    </div>
                 </div>
             </div>
         </section>
